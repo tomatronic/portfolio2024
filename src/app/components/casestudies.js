@@ -11,7 +11,7 @@ const caseStudies=[
         title:"Creating a beatiful and engaging craft beer brand and blog",
         blurb:"A personal project that saw the of a blog based craft beer community go through all the stage of the UX process. I still hope to bring this project to a live deployment one day.",
         link:"/work/beer-blog",
-        img: "/brewtifulThumb.png"
+        img: "/brewtiful24.png"
     },
     {
       tag: "Designflows 2021",
