@@ -17,7 +17,7 @@ export default function ExampleGallery() {
         </div>
         <div>
             <Zoom>
-                <Image src="/donutmock.png" alt="Tom Spencer - Senior UX Designer" width={1000} height={728} className="h-auto max-w-full rounded-lg" />
+                <Image src="/donutmock.png" alt="Concept delivery app for a fictional donut company" width={1000} height={728} className="h-auto max-w-full rounded-lg" />
             </Zoom>
         </div>
         <div>
@@ -33,7 +33,7 @@ export default function ExampleGallery() {
         </div>
         <div>
         <Zoom>
-                <Image src="/404.png" alt="Tom Spencer - Senior UX Designer" width={1000} height={728} className="h-auto max-w-full rounded-lg" />
+                <Image src="/404.png" alt="404 page illustration iteration" width={1000} height={728} className="h-auto max-w-full rounded-lg" />
             </Zoom>
         </div>
     </div>
@@ -53,7 +53,9 @@ export default function ExampleGallery() {
             <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="" />
         </div>
         <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="" />
+        <Zoom>
+                <Image src="/beerapp.gif" alt="Tom Spencer - Senior UX Designer" width={1000} height={728} className="h-auto max-w-full rounded-lg" />
+            </Zoom>
         </div>
         <div>
             <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="" />

@@ -18,7 +18,7 @@ const caseStudies=[
       title:"The process of creating a tool hire app in just 48 hours",
       blurb:"A fast paced project that saw my skills tested in an extremely tight timeframe. From concept to high fidelety mocks, this project was both fun and exciting as well as helping me grow as a designer.",
       link:"/work/designflows",
-      img: "/competitionThumb.png"
+      img: "/competitionThumb24.png"
   },
   ]
   export default caseStudies;
