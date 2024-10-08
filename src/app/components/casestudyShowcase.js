@@ -1,27 +1,73 @@
-import caseStudies from "./casestudies";
-import Presentation from "./casestudyCard";
+// CasestudyShowcase.js
+
+import Image from "next/image";
+import Link from "next/link";
 
 function CasestudyShowcase() {
   return (
-    <div className="mb-16" id="work">
-      <div className="py-40 md:pt-20 bg-gray-100" style={{ boxShadow: "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1)" }}>
-        <div className="container max-w-screen-xl mx-auto">
-          <h1 className="text-center text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-white">Case Studies</h1>
-          <p className="max-w-xl mx-auto pt-4 pb-32 mb-10 text-center font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-balance">A small curated collection of some of my favorite projects.</p>
+    <div id="work">
+      <div className="bg-[radial-gradient(154.86%_76.83%_at_50%_22.26% py-16" style={{ boxShadow: "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset" }}>
+        <div className="container mx-auto max-w-screen-xl px-4">
+          {/* <h1 className="text-4xl font-extrabold leading-none tracking-tight text-gray-700 dark:text-white">Case Studies</h1>
+          <p className="max-w-2xl pb-16 pt-4 text-base font-light text-gray-700 dark:text-gray-400">A small curated collection of some of my favorite projects.</p> */}
+          <div className="space-y-16">
+            <div className="grid grid-cols-1 gap-20 rounded-2xl bg-purple-100 md:grid-cols-2">
+              <div className="grid-col-1 grid content-end overflow-visible pl-20 pt-20">
+                <Image src="/offersThumb.png" width={0} height={0} alt="Streamlining the offer management experience" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
+              </div>
 
-          <div className="space-y-96 max-w-screen-xl mx-auto">
-            {caseStudies.map((study, i) => (
-              <Presentation
-                key={study.link}
-                tag={study.tag}
-                title={study.title}
-                blurb={study.blurb}
-                img={study.img}
-                link={study.link}
-                isReversed={i % 2 !== 0}
-              />
-            ))}
-          </div>            
+              <div className="grid grid-cols-1 justify-center gap-4 py-20 pr-20">
+                <div className="text-sm font-medium uppercase text-gray-600">Rakuten Advertising</div>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Streamlining the offer management experience</h2>
+                <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
+                  Taking an existing product and bringing forward with a new vision requires care and attention. Working closely with users I was able to carefully craft a new experience to bring the Affiliate marketing dashboard experience to a completely new level.
+                </p>
+                <Link href="work/offer-management" className="self-start">
+                  <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                    Read case study
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-20 rounded-2xl bg-emerald-50 md:grid-cols-2">
+              <div className="grid-col-1 order-last grid content-center overflow-visible pr-20">
+                <Image src="/brewtiful24.png" width={0} height={0} alt="Creating a beatiful and engaging craft beer brand and blog" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
+              </div>
+
+              <div className="grid grid-cols-1 justify-center gap-4 py-20 pl-20">
+                <div className="text-sm font-medium uppercase text-gray-600">Brewtiful</div>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Creating a beatiful and engaging craft beer brand and blog</h2>
+                <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
+                  A personal project that saw the of a blog based craft beer community go through all the stage of the UX process. I still hope to bring this project to a live deployment one day.
+                </p>
+                <Link href="/work/beer-blog" className="self-start">
+                <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                Read case study
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-20 rounded-2xl bg-yellow-50 md:grid-cols-2">
+              <div className="grid-col-1 grid content-center overflow-visible pl-20">
+                <Image src="/competitionThumb24.png" width={0} height={0} alt="Creating a tool hire app in 48 hours" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
+              </div>
+
+              <div className="grid grid-cols-1 justify-center gap-4 py-20 pr-20">
+                <div className="text-sm font-medium uppercase text-gray-600">Designflows 2021</div>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Creating a tool hire app in 48 hours</h2>
+                <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
+                  A fast paced project that saw my skills tested in an extremely tight timeframe. From concept to high fidelety mocks, this project was both fun and exciting as well as helping me grow as a designer.
+                </p>
+                <Link href="/work/designflows" className="self-start">
+                <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                Read case study
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -6,11 +6,11 @@ import 'react-medium-image-zoom/dist/styles.css'
 export default function ExampleGallery() {
     return (
         <div className="mb-16">
-        <div className="pt-40 md:pt-20">
-          <div className="container max-w-screen-xl mx-auto pt-20">
-          <h1 className="text-center text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-white">Extra Pixels</h1>
-          <p className="max-w-xl mx-auto pt-4 pb-32 mb-10 text-center font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-balance">Examples of ideas and projects in gallery form.</p>
-<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="pt-16 md:pt-16">
+          <div className="container mx-auto max-w-screen-xl">
+          <h1 className="text-center text-2xl font-extrabold leading-none tracking-tight md:text-3xl xl:text-4xl dark:text-white">Extra Pixels</h1>
+          <p className="mx-auto max-w-xl text-balance pb-16 pt-4 text-center text-base text-gray-500 dark:text-gray-400">Examples of ideas and projects in gallery form.</p>
+<div className="grid grid-cols-2 gap-4 md:grid-cols-4">
     <div className="grid gap-4">
         <div>        
             <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
