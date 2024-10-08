@@ -6,19 +6,33 @@ import { motion } from "framer-motion"
 export default function Hero() {
   return (
     <div className="relative isolate overflow-hidden bg-[url('/herobg.png')] bg-fixed">
-      
-      <motion.div initial={{y: 48, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} className="container relative z-10 mx-auto flex h-[calc(100vh-280px)] max-w-3xl flex-col flex-wrap justify-center py-24">
-        <p>Hello, my name is Tom</p>
-        <h1 className="mb-10 max-w-xl text-3xl font-semibold leading-none tracking-tight md:text-4xl dark:text-white">I design experiences</h1>
-        <p className="mb-6 max-w-xl text-base font-medium text-gray-600 lg:mb-8 dark:text-gray-400">
-          I'm a passionate senior UX designer with over 10 years of design experience. My mission is simple: deliver simple, yet effective, user-centric design.</p>
-          <p className="text-base font-medium text-gray-600">Currently working at <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a> in Brighton, UK.</p>
-          
-        
-      </motion.div>
-
-      
-    </div>
+    <motion.div
+      initial={{y: 48, opacity: 0}}
+      whileInView={{y: 0, opacity: 1}}
+      transition={{ ease: 'easeInOut', duration: 0.5 }}
+      viewport={{ once: true }}
+      className="container relative z-10 mx-auto h-[calc(100vh-280px)] max-w-screen-xl px-4 py-16 md:py-24"
+    >
+      <div className="grid h-full grid-cols-1 content-center justify-center gap-6">
+        <div>
+          <p className="text-center text-xl md:text-left">Hi <WavingHand />, I'm Tom</p>
+        </div>
+        <div>
+          <h1 className="max-w-xl text-center text-3xl font-semibold leading-none tracking-tight md:text-left md:text-5xl dark:text-white">I design experiences</h1>
+        </div>
+        <div>
+          <p className="max-w-2xl text-center text-xl font-medium text-gray-600 md:text-left lg:mb-2 dark:text-gray-400">
+            Passionate about design and always striving to learn. I have over 10 years of design industry experience. My mission: deliver simple, yet effective, user-centric design.
+          </p>
+        </div>
+        <div>
+          <p className="text-center text-sm font-medium uppercase text-gray-600 md:text-left">
+            Senior UX designer @ <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a>
+          </p>
+        </div>
+      </div>
+    </motion.div>
+  </div>
   )
 }
 

@@ -22,16 +22,41 @@ function CasestudyShowcase() {
                 <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
                   Taking an existing product and bringing forward with a new vision requires care and attention. Working closely with users I was able to carefully craft a new experience to bring the Affiliate marketing dashboard experience to a completely new level.
                 </p>
-                <Link href="work/offer-management" className="self-start">
+                <Link href="casestudy/Rakuten" className="self-start">
                   <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
                     Read case study
                   </button>
                 </Link>
               </div>
             </div>
+            <div className="grid grid-cols-1 gap-20 rounded-2xl bg-yellow-50 md:grid-cols-2">
+            <div className="grid-col-1 relative order-last grid content-center overflow-visible pl-20">
+  <div className="absolute inset-0 overflow-hidden">
+    <Image 
+      src="/sm_tools.png" 
+      alt="Creating a tool hire app in 48 hours" 
+      layout="fill"
+      objectFit="cover"
+      className="absolute left-1/2 top-1/2 min-h-full min-w-full"
+    />
+  </div>
+</div>
 
+              <div className="grid grid-cols-1 justify-center gap-4 py-20 pl-20">
+                <div className="text-sm font-medium uppercase text-gray-600">Designflows 2021</div>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Creating a tool hire app in 48 hours</h2>
+                <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
+                  A fast paced project that saw my skills tested in an extremely tight timeframe. From concept to high fidelety mocks, this project was both fun and exciting as well as helping me grow as a designer.
+                </p>
+                <Link href="/casestudy/DesignFlows" className="self-start">
+                <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                Read case study
+                  </button>
+                </Link>
+              </div>
+            </div>
             <div className="grid grid-cols-1 gap-20 rounded-2xl bg-emerald-50 md:grid-cols-2">
-              <div className="grid-col-1 order-last grid content-center overflow-visible pr-20">
+              <div className="grid-col-1 grid content-center overflow-visible pl-20">
                 <Image src="/brewtiful24.png" width={0} height={0} alt="Creating a beatiful and engaging craft beer brand and blog" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
               </div>
 
@@ -41,7 +66,7 @@ function CasestudyShowcase() {
                 <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
                   A personal project that saw the of a blog based craft beer community go through all the stage of the UX process. I still hope to bring this project to a live deployment one day.
                 </p>
-                <Link href="/work/beer-blog" className="self-start">
+                <Link href="/casestudy/Brewtiful" className="self-start">
                 <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
                 Read case study
                   </button>
@@ -49,24 +74,7 @@ function CasestudyShowcase() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-20 rounded-2xl bg-yellow-50 md:grid-cols-2">
-              <div className="grid-col-1 grid content-center overflow-visible pl-20">
-                <Image src="/competitionThumb24.png" width={0} height={0} alt="Creating a tool hire app in 48 hours" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
-              </div>
-
-              <div className="grid grid-cols-1 justify-center gap-4 py-20 pr-20">
-                <div className="text-sm font-medium uppercase text-gray-600">Designflows 2021</div>
-                <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Creating a tool hire app in 48 hours</h2>
-                <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
-                  A fast paced project that saw my skills tested in an extremely tight timeframe. From concept to high fidelety mocks, this project was both fun and exciting as well as helping me grow as a designer.
-                </p>
-                <Link href="/work/designflows" className="self-start">
-                <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
-                Read case study
-                  </button>
-                </Link>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

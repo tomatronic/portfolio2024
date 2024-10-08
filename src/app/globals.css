@@ -26,3 +26,11 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  p {
+    @apply text-base;
+    @apply font-medium;
+    @apply text-gray-700;
+  }
+}
