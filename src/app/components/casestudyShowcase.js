@@ -12,8 +12,9 @@ function CasestudyShowcase() {
           <p className="max-w-2xl pb-16 pt-4 text-base font-light text-gray-700 dark:text-gray-400">A small curated collection of some of my favorite projects.</p> */}
           <div className="space-y-16">
             <div className="grid grid-cols-1 gap-20 rounded-2xl bg-purple-100 md:grid-cols-2">
-              <div className="grid-col-1 grid content-end overflow-visible pl-20 pt-20">
-                <Image src="/offersThumb.png" width={0} height={0} alt="Streamlining the offer management experience" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
+              <div className="grid-col-1 relative grid content-end overflow-visible pl-20 pt-20">
+                <div className="absolute inset-0 overflow-hidden"><Image src="/offersThumb.png" alt="Streamlining the offer management experience" className="absolute left-1/2 top-1/2 min-h-full min-w-full pl-8 pt-8" layout="fill" objectFit="cover" />
+                </div>
               </div>
 
               <div className="grid grid-cols-1 justify-center gap-4 py-20 pr-20">

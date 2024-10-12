@@ -5,24 +5,24 @@ import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
-    <div className="relative isolate overflow-hidden bg-[url('/herobg.png')] bg-fixed">
+    <div className="relative isolate overflow-hidden">
     <motion.div
       initial={{y: 48, opacity: 0}}
       whileInView={{y: 0, opacity: 1}}
       transition={{ ease: 'easeInOut', duration: 0.5 }}
       viewport={{ once: true }}
-      className="container relative z-10 mx-auto h-[calc(100vh-280px)] max-w-screen-xl px-4 py-16 md:py-24"
+      className="container relative z-10 mx-auto h-[calc(100vh-280px)] max-w-screen-lg px-4 py-16 md:py-24"
     >
       <div className="grid h-full grid-cols-1 content-center justify-center gap-6">
         <div>
-          <p className="text-center text-xl md:text-left">Hi <WavingHand />, I'm Tom</p>
+          <p className="text-center text-2xl md:text-left">Hi <WavingHand />, I'm Tom</p>
         </div>
         <div>
-          <h1 className="max-w-xl text-center text-3xl font-semibold leading-none tracking-tight md:text-left md:text-5xl dark:text-white">I design experiences</h1>
+          <h1 className="max-w-3xl text-center text-3xl font-bold leading-none tracking-tight md:text-left md:text-6xl dark:text-white">I design experiences</h1>
         </div>
         <div>
-          <p className="max-w-2xl text-center text-xl font-medium text-gray-600 md:text-left lg:mb-2 dark:text-gray-400">
-            Passionate about design and always striving to learn. I have over 10 years of design industry experience. My mission: deliver simple, yet effective, user-centric design.
+          <p className="max-w-3xl text-center text-2xl font-medium text-gray-600 md:text-left lg:mb-2 dark:text-gray-400">
+          Turning complexity into clarity, one pixel at a time. I create experiences that don't just work, but feel great.
           </p>
         </div>
         <div>
