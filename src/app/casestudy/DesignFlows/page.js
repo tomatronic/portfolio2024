@@ -143,13 +143,11 @@ function CaseStudy() {
                             <h2 className="pt-16 text-xl font-semibold tracking-tight text-gray-700">Final thoughts</h2>
                             <p>The competition was fun, and I will be looking out for the event again later this year. However, in the meantime I will take the judges feedback onboard and possibly revisit this project at a later date to try and improve the final result.</p>
                             <br/><br/><br/>
-                            <Link href="/">
-                                <div className="inline-flex pb-4 pt-10">
-                                    <div className="from-rose-400 via-fuchsia-500 to-indigo-500 tracking-tight text-indigo-600 hover:bg-gradient-to-tr hover:bg-clip-text hover:text-transparent hover:ease-in-out">
-                                        <p>Back to home page</p>
-                                    </div>
-                                </div>
-                            </Link>
+                            <Link href="/" className="self-start">
+                <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                Back to home page
+                  </button>
+                </Link>
                             </div>
                         </div>
                     </div>

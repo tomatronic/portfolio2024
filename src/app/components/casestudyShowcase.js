@@ -55,7 +55,7 @@ function CasestudyShowcase() {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-20 rounded-2xl bg-emerald-50 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 rounded-2xl bg-emerald-50 md:grid-cols-2 md:gap-20">
               <div className="grid-col-1 grid content-center overflow-visible pl-20">
                 <Image src="/brewtiful24.png" width={0} height={0} alt="Creating a beatiful and engaging craft beer brand and blog" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
               </div>

@@ -119,13 +119,11 @@ function BeerBlog() {
                             <p className="mb-16 text-base font-medium text-gray-700">Being a personal project I am happy with where I have got to. I hope in the future to iterate on this further and maybe even take a dive into building this into a real life website.</p>
                             <p className="text-base font-medium text-gray-700">The design process required a bit more discipline than other projects I have worked on as I had to find time around my work and social life. I think if I embark on a similar project in the future I will make sure to plan time each week to focus solely on the idea.</p>
                             <br /><br /><br />
-                            <Link href="/">
-                                <div className="inline-flex pb-4 pt-10">
-                                    <div className="from-rose-400 via-fuchsia-500 to-indigo-500 tracking-tight text-indigo-600 hover:bg-gradient-to-tr hover:bg-clip-text hover:text-transparent hover:ease-in-out">
-                                        <p>Back to home page</p>
-                                    </div>
-                                </div>
-                            </Link>
+                            <Link href="/" className="self-start">
+                <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                Back to home page
+                  </button>
+                </Link>
                         </div>
                     </div>
                 </div>

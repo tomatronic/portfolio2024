@@ -10,7 +10,7 @@ export default function ExampleGallery() {
           <div className="container mx-auto max-w-screen-xl">
           <h1 className="text-center text-2xl font-extrabold leading-none tracking-tight md:text-3xl xl:text-4xl dark:text-white">Extra Pixels</h1>
           <p className="mx-auto max-w-xl text-balance pb-16 pt-4 text-center text-base text-gray-500 dark:text-gray-400">A collection of personal projects.</p>
-<div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+<div className="grid grid-cols-2 gap-4 px-4 md:grid-cols-4">
     <div className="grid gap-4">
         <div>        
             <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
