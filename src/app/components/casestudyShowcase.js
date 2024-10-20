@@ -7,17 +7,16 @@ function CasestudyShowcase() {
   return (
     <div id="work">
       <div className="bg-[radial-gradient(154.86%_76.83%_at_50%_22.26% py-16" style={{ boxShadow: "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset" }}>
-        <div className="container mx-auto max-w-screen-xl px-4">
-          {/* <h1 className="text-4xl font-extrabold leading-none tracking-tight text-gray-700 dark:text-white">Case Studies</h1>
-          <p className="max-w-2xl pb-16 pt-4 text-base font-light text-gray-700 dark:text-gray-400">A small curated collection of some of my favorite projects.</p> */}
+        <div className="container mx-auto max-w-screen-xl px-4">          
           <div className="space-y-16">
-            <div className="grid grid-cols-1 gap-20 rounded-2xl bg-purple-100 md:grid-cols-2">
-              <div className="grid-col-1 relative grid content-end overflow-visible pl-20 pt-20">
-                <div className="absolute inset-0 overflow-hidden"><Image src="/offersThumb.png" alt="Streamlining the offer management experience" className="absolute left-1/2 top-1/2 min-h-full min-w-full pl-8 pt-8" layout="fill" objectFit="cover" />
+            <div className="grid grid-cols-1 gap-8 rounded-2xl bg-purple-100 md:grid-cols-2 md:gap-20">
+              <div className="grid-col-1 relative grid content-end overflow-visible px-8 py-8 md:px-0 md:py-0 md:pl-20 md:pt-20">
+                <div className="relative inset-0 overflow-hidden md:absolute">
+                  <Image src="/offersThumb.png" alt="Streamlining the offer management experience" className="left-1/2 top-1/2 min-h-full min-w-full md:pl-8 md:pt-8" layout="fill" objectFit="cover" />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 justify-center gap-4 py-20 pr-20">
+              <div className="grid grid-cols-1 justify-center gap-4 px-8 py-8 md:px-0 md:py-20 md:pr-20">
                 <div className="text-sm font-medium uppercase text-gray-600">Rakuten Advertising</div>
                 <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Streamlining the offer management experience</h2>
                 <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
@@ -30,9 +29,9 @@ function CasestudyShowcase() {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-20 rounded-2xl bg-yellow-50 md:grid-cols-2">
-            <div className="grid-col-1 relative order-last grid content-center overflow-visible pl-20">
-  <div className="absolute inset-0 overflow-hidden">
+            <div className="grid grid-cols-1 gap-8 rounded-2xl bg-yellow-50 md:grid-cols-2 md:gap-20">
+            <div className="grid-col-1 relative grid content-center overflow-visible md:order-last md:pl-20">
+  <div className="relative inset-0 h-[20rem] overflow-hidden md:absolute md:h-full">
     <Image 
       src="/sm_tools.png" 
       alt="Creating a tool hire app in 48 hours" 
@@ -43,7 +42,7 @@ function CasestudyShowcase() {
   </div>
 </div>
 
-              <div className="grid grid-cols-1 justify-center gap-4 py-20 pl-20">
+              <div className="grid grid-cols-1 justify-center gap-4 px-8 py-8 md:px-0 md:py-20 md:pl-20">
                 <div className="text-sm font-medium uppercase text-gray-600">Designflows 2021</div>
                 <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Creating a tool hire app in 48 hours</h2>
                 <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
@@ -61,7 +60,7 @@ function CasestudyShowcase() {
                 <Image src="/brewtiful24.png" width={0} height={0} alt="Creating a beatiful and engaging craft beer brand and blog" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
               </div>
 
-              <div className="grid grid-cols-1 justify-center gap-4 py-20 pl-20">
+              <div className="grid grid-cols-1 justify-center gap-4 px-8 py-8 md:px-0 md:py-20 md:pr-20">
                 <div className="text-sm font-medium uppercase text-gray-600">Brewtiful</div>
                 <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Creating a beatiful and engaging craft beer brand and blog</h2>
                 <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
