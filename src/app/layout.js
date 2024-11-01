@@ -25,13 +25,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <GoogleAnalytics gaID="G-CCDKVM70NV" />
+    <html lang="en">      
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navigation />
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-CCDKVM70NV" />
     </html>
   );
 }
