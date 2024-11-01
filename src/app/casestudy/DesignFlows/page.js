@@ -4,7 +4,7 @@ import Zoom from "react-medium-image-zoom"
 
 export async function generateMetadata() {
     return {
-      title: "Tom Spencer - Designflows",
+      title: "Designflows | Tom Spencer",
       description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
       }
   }

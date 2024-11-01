@@ -1,6 +1,6 @@
 export async function generateMetadata() {
     return {
-      title: "Tom Spencer - About me",
+      title: "About | Tom Spencer",
       description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
       }
   }
