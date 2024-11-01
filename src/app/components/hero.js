@@ -11,14 +11,14 @@ export default function Hero() {
       whileInView={{y: 0, opacity: 1}}
       transition={{ ease: 'easeInOut', duration: 0.5 }}
       viewport={{ once: true }}
-      className="container relative z-10 mx-auto h-[calc(100vh-280px)] max-w-screen-lg px-4 py-16 md:py-24"
+      className="container relative z-10 mx-auto max-w-screen-lg px-4 py-16"
     >
       <div className="grid h-full grid-cols-1 content-center justify-center gap-6">
         <div>
           <p className="text-center text-xl md:text-left md:text-2xl">Hi <WavingHand />, I'm Tom</p>
         </div>
         <div>
-          <h1 className="max-w-3xl text-center text-3xl font-bold leading-none tracking-tight md:text-left md:text-6xl dark:text-white">I design experiences</h1>
+          <h1 className="max-w-3xl text-center text-3xl font-bold leading-none tracking-tight text-gray-600 md:text-left md:text-6xl dark:text-white">I design experiences</h1>
         </div>
         <div>
           <p className="max-w-3xl text-center text-xl font-medium text-gray-600 md:text-left md:text-2xl lg:mb-2 dark:text-gray-400">

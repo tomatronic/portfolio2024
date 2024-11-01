@@ -6,7 +6,7 @@ import Link from "next/link";
 function CasestudyShowcase() {
   return (
     <div id="work">
-      <div className="bg-[radial-gradient(154.86%_76.83%_at_50%_22.26% py-16" style={{ boxShadow: "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset" }}>
+      <div className="bg-[radial-gradient(154.86%_76.83%_at_50%_22.26%)] py-16">
         <div className="container mx-auto max-w-screen-xl px-4">          
           <div className="space-y-16">
             <div className="grid grid-cols-1 gap-8 rounded-2xl bg-purple-100 md:grid-cols-2 md:gap-20">
