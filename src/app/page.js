@@ -5,6 +5,13 @@ import ExampleGallery from './components/examples';
 import OtherWorkSection from './components/OtherWorkSection'
 import Footer from './components/Footer' */
 
+export async function generateMetadata() {
+  return {
+    title: "Tom Spencer - UX Designer",
+    description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
+    }
+}
+
 export default function Home() {
   return (
     

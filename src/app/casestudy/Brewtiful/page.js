@@ -3,6 +3,13 @@ import Image from "next/image"
 import React from "react"
 import Zoom from "react-medium-image-zoom"
 
+export async function generateMetadata() {
+    return {
+      title: "Tom Spencer - Brewtiful",
+      description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
+      }
+  }
+
 function BeerBlog() {
     return (
         <>

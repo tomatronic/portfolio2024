@@ -18,10 +18,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata = {
-  title: "Tom Spencer - UX Designer",
-  description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
-};
+export async function generateMetadata() {
+  return {
+    title: "Tom Spencer - UX Designer",
+    description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
+    }
+}
 
 export default function RootLayout({ children }) {
   return (
