@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from './components/navigation';
 import Footer from "./components/footer";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 
 
@@ -26,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmID="GTM-N8N95SF5" />
+      <GoogleAnalytics gaID="G-CCDKVM70NV" />
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navigation />
         {children}
