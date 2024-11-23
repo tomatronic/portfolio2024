@@ -15,18 +15,14 @@ export default function Hero() {
     >
       <div className="grid h-full grid-cols-1 content-center justify-center gap-6">
         <div>
-          <p className="text-center text-xl md:text-left md:text-2xl">Hi <WavingHand />, I'm Tom</p>
+          <p className="text-center text-xl text-gray-100 md:text-left md:text-2xl">Hi <WavingHand />, I'm Tom</p>
         </div>
         <div>
-          <h1 className="max-w-3xl text-center text-3xl font-bold leading-none tracking-tight text-gray-600 md:text-left md:text-6xl dark:text-white">I design experiences</h1>
+          <h1 className="max-w-3xl text-center text-3xl font-bold leading-tight tracking-normal text-gray-100 md:text-left md:text-4xl dark:text-white">Turning complexity into clarity, crafting experiences that feel effortless and enjoyable.</h1>
         </div>
+
         <div>
-          <p className="max-w-3xl text-center text-xl font-medium text-gray-600 md:text-left md:text-2xl lg:mb-2 dark:text-gray-400">
-          Turning complexity into clarity, one pixel at a time. I create experiences that don't just work, but feel great.
-          </p>
-        </div>
-        <div>
-          <p className="text-center text-sm font-medium uppercase text-gray-600 md:text-left">
+          <p className="text-sm font-medium uppercase text-gray-100">
             Senior UX designer @ <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a>
           </p>
         </div>

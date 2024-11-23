@@ -7,7 +7,7 @@ function CasestudyShowcase() {
   return (
     <div id="work">
       <div className="bg-[radial-gradient(154.86%_76.83%_at_50%_22.26%)] py-16">
-        <div className="container mx-auto max-w-screen-xl px-4">          
+        <div className="container mx-auto max-w-screen-lg px-4">          
           <div className="space-y-16">
             <div className="grid grid-cols-1 gap-8 rounded-2xl bg-purple-100 md:grid-cols-2 md:gap-20">
               <div className="grid-col-1 relative grid content-end overflow-visible px-8 py-8 md:px-0 md:py-0 md:pl-20 md:pt-20">
@@ -18,7 +18,7 @@ function CasestudyShowcase() {
 
               <div className="grid grid-cols-1 justify-center gap-4 px-8 py-8 md:px-0 md:py-20 md:pr-20">
                 <div className="text-sm font-medium uppercase text-gray-600">Rakuten Advertising</div>
-                <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Streamlining the offer management experience</h2>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Improving offer management</h2>
                 <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
                   Taking an existing product and bringing forward with a new vision requires care and attention. Working closely with users I was able to carefully craft a new experience to bring the Affiliate marketing dashboard experience to a completely new level.
                 </p>
