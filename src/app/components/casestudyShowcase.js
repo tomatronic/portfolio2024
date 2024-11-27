@@ -12,7 +12,7 @@ function CasestudyShowcase() {
             <div className="grid grid-cols-1 gap-8 rounded-2xl bg-purple-100 md:grid-cols-2 md:gap-20">
               <div className="grid-col-1 relative grid content-end overflow-visible px-8 py-8 md:px-0 md:py-0 md:pl-20 md:pt-20">
                 <div className="relative inset-0 overflow-hidden md:absolute">
-                  <Image src="/offersThumb.png" alt="Streamlining the offer management experience" className="left-1/2 top-1/2 min-h-full min-w-full md:pl-8 md:pt-8" layout="fill" objectFit="cover" />
+                  <Image src="/offersThumb.png" alt="Streamlining the offer management experience" className="left-1/2 top-1/2 min-h-full min-w-full md:pl-8 md:pt-8" layout="fill" objectFit="cover" priority={false} />
                 </div>
               </div>
 
