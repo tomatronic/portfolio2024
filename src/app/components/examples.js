@@ -13,7 +13,7 @@ export default function ExampleGallery() {
 <div className="grid grid-cols-2 gap-4 px-4 pb-16 md:grid-cols-4">
     <div className="grid gap-4">
         <div>        
-            <img className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x300" alt="" />
+            <Image className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x300" alt="" />
         </div>
         <div>
             <Zoom>
@@ -21,15 +21,17 @@ export default function ExampleGallery() {
             </Zoom>
         </div>
         <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x236" alt="" />
+            <Zoom>
+                <Image className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x236" alt="" width={236} height={236} />
+            </Zoom>
         </div>
     </div>
     <div className="grid gap-4">
         <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x236" alt="" />
+            <Image className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x236" alt="" />
         </div>
         <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x300" alt="" />
+            <Image className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x300" alt="" />
         </div>
         <div>
         <Zoom>
@@ -39,18 +41,18 @@ export default function ExampleGallery() {
     </div>
     <div className="grid gap-4">
         <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x300" alt="" />
+            <Image className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x300" alt="" />
         </div>
         <Zoom>
                 <Image src="/todoList.gif" alt="Tom Spencer - Senior UX Designer" width={1000} height={728} className="h-auto max-w-full rounded-lg" />
             </Zoom>
         <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x236" alt="" />
+            <Image className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x236" alt="" />
         </div>
     </div>
     <div className="grid gap-4">
         <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x236" alt="" />
+            <Image className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x236" alt="" />
         </div>
         <div>
         <Zoom>
@@ -58,7 +60,9 @@ export default function ExampleGallery() {
             </Zoom>
         </div>
         <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x175" alt="" />
+        <Zoom>
+            <Image className="h-auto max-w-full rounded-lg" src="https://placehold.co/236x175" alt="" width={236} height={175} />
+        </Zoom>
         </div>
     </div>
 </div>
