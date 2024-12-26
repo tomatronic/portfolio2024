@@ -23,7 +23,7 @@ function CasestudyShowcase() {
                   Taking an existing product and bringing forward with a new vision requires care and attention. Working closely with users I was able to carefully craft a new experience to bring the Affiliate marketing dashboard experience to a completely new level.
                 </p>
                 <Link href="casestudy/Rakuten" className="self-start">
-                  <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                  <button className="rounded-xl border border-gray-300 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
                     Read case study
                   </button>
                 </Link>
@@ -49,7 +49,7 @@ function CasestudyShowcase() {
                   A fast paced project that saw my skills tested in an extremely tight timeframe. From concept to high fidelety mocks, this project was both fun and exciting as well as helping me grow as a designer.
                 </p>
                 <Link href="/casestudy/DesignFlows" className="self-start">
-                <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                <button className="rounded-xl border border-gray-300 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
                 Read case study
                   </button>
                 </Link>
@@ -67,7 +67,7 @@ function CasestudyShowcase() {
                   A personal project that saw the of a blog based craft beer community go through all the stage of the UX process. I still hope to bring this project to a live deployment one day.
                 </p>
                 <Link href="/casestudy/Brewtiful" className="self-start">
-                <button className="rounded-xl bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                <button className="rounded-xl border border-gray-300 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
                 Read case study
                   </button>
                 </Link>
