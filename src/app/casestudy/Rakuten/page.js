@@ -99,7 +99,7 @@ function Offer() {
                                 </Zoom>
                             </div>
                             <div>
-                                <h2 className="pt-16 text-xl font-semibold tracking-tight">Sketching</h2>
+                                <h2 className="text-xl font-semibold tracking-tight">Sketching</h2>
                                 <p>Once happy with the flow I opened my notepad and began sketching some initial ideas. At this stage I scribble a lot of ideas down both illustrated and in note form, it can look like a mess but I find it helps to get all my initial ideas on paper and then quickly eliminate ideas or come back to them at a later date if needed. As I develop an idea I start to sketch it into something of higher quality to allow me to easily translate it to a digital wireframe when the time comes.</p>
                             </div>
                             <div>
@@ -108,7 +108,7 @@ function Offer() {
                                 </Zoom>
                             </div>
                             <div>
-                                <h2 className="pt-16 text-xl font-semibold tracking-tight">Prototypes</h2>
+                                <h2 className="text-xl font-semibold tracking-tight">Prototypes</h2>
                                 <p>In order to validate my ideas I proceeded to complete a round of simple user testing. Rather than exposing my test candidates to my sketches I went ahead and created simple wireframes within Sketch that I could share and gather initial feedback with. I used to Zoom to conduct interviews with the candidates and got them to complete a set of simple tasks. This first round of testing allowed me to identify that the users were wanting a dedicated landing page for offer invitations alongside the proposed notification based system.</p>
                             </div>
                             <div>
@@ -117,7 +117,7 @@ function Offer() {
                                 </Zoom>
                             </div>
                             <div>
-                                <h2 className="pt-16 text-xl font-semibold tracking-tight">Flow iteration</h2>
+                                <h2 className="text-xl font-semibold tracking-tight">Flow iteration</h2>
                                 <p>I continued to slowly increase the complexity of my mocks, allowing the user to gain more understanding of the goal driven outcome. Once the mockups reached a certain point I began mapping them into a map of hotspots within Sketch to allow the creation of an interactive prototype. This prototype creates a more linear flow but enables a test candidate to become much more immersed in the test and provide a greater level of feedback.</p>
                             </div>
                             <div>
@@ -126,7 +126,7 @@ function Offer() {
                                 </Zoom>
                             </div>
                             <div>
-                                <h2 className="pt-16 text-xl font-semibold tracking-tight">User testing</h2>
+                                <h2 className="text-xl font-semibold tracking-tight">User testing</h2>
                                 <p>After performing a number of protoype testing sessions I was able to identify a couple of further design adjustments that were required. This involved a round of iterations to ensure functionality was highlighted in a relevant way and that offers were made easier to compare.</p>
                             </div>
                             <div>
@@ -135,7 +135,7 @@ function Offer() {
                                 </Zoom>
                             </div>
                             <div>
-                                <h2 className="pt-16 text-xl font-semibold tracking-tight">Outcome</h2>
+                                <h2 className="text-xl font-semibold tracking-tight">Outcome</h2>
                                 <p>Since the updated offer management flow and UI have been implemented we have seen a reduction in the amount of support tickets raised, and account managers have reported less queries based around offer management. The account management have said that this reduction in queries has led to them having more time to focus on the users needs and build better relationships with them.</p>
                                 <p>Since being released I continue to monitor usage through the FullStory application, allowing me to perform iterative design amends to ensure a continual progression to the applications development.</p>
                             </div>
@@ -146,7 +146,7 @@ function Offer() {
                             </div>
                             <div>
                             <Link href="/" className="self-start">
-                <button className="rounded-xl border border-gray-400 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                <button className="rounded-xl border border-gray-400 bg-white/95 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/75 hover:shadow-lg" type="button">
                 Back to home page
                   </button>
                 </Link>

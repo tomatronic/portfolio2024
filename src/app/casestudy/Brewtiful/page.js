@@ -129,7 +129,7 @@ function BeerBlog() {
                             <p className="text-base font-medium">The design process required a bit more discipline than other projects I have worked on as I had to find time around my work and social life. I think if I embark on a similar project in the future I will make sure to plan time each week to focus solely on the idea.</p>
                             <br /><br /><br />
                             <Link href="/" className="self-start">
-                <button className="rounded-xl border border-gray-400 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                            <button className="rounded-xl border border-gray-400 bg-white/95 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/75 hover:shadow-lg" type="button">
                 Back to home page
                   </button>
                 </Link>
