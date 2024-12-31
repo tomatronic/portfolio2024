@@ -61,7 +61,7 @@ function CasestudyShowcase() {
               </div>
 
               <div className="grid grid-cols-1 justify-center gap-4 px-8 py-8 md:px-0 md:py-20 md:pr-20">
-                <div className="text-sm font-medium uppercase text-gray-600">Brewtiful</div>
+                <div className="text-sm font-medium uppercase text-gray-600">Brewtiful (Case study being updated)</div>
                 <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Creating a beatiful and engaging craft beer brand and blog</h2>
                 <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
                   A personal project that saw the of a blog based craft beer community go through all the stage of the UX process. I still hope to bring this project to a live deployment one day.
