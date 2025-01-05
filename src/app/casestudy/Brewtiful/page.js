@@ -98,21 +98,15 @@ function BeerBlog() {
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Brand identity</h2>
                             <p className="text-base font-medium">I decided to take pen to paper again at this point and begin sketching some ideas. I wanted to get a rough idea of what may work and aimed to identify information that may or may not be needed on the pages.</p>
                             <p className="mb-16 text-base font-medium">The idea of quick scribbles like this allows me to perform multiple iterations in minimal time. It also helps begin the process of creating more of a brand identity.</p>
-                            <Zoom>
-                                <Image src="/beerID.png" layout="intrinsic" className="rounded-2xl" width="1545" height="1152" alt="I created a simple colour palette and chose two fonts to identify my brand."   />
-                            </Zoom>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Low fidelity mocks</h2>
                             <p className="text-base font-medium">I felt at this point that the project was at a good point. And although not a huge step I decided to grab my favourite of the previous sketches and reproduce them in an ever so slightly better version.</p>
-                            <p className="mb-16 text-base font-medium">This new version of the mockups helped me further understad how the final page may look. A few tweaks added here and I am strting to be very happy with the design direction.</p>
+                            <p className="mb-16 text-base font-medium">This new version of the mockups helped me further understand how the final page may look. A few tweaks added here and I am strting to be very happy with the design direction.</p>
                             <Zoom>
                                 <Image src="/lofiBeer.png" layout="intrinsic" className="rounded-2xl" width="2000" height="1500" alt="Developing sketches into some very simple digital assets" />
                             </Zoom>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Prototyping</h2>
                             <p className="text-base font-medium">I followed a slightly alternate route to what I would usually. I decided to go ahead and create a few prototypes that I could then try and gather some feedback on.</p>
                             <p className="mb-16 text-base font-medium">At this point I wasnt sure how I would go about getting some testing completed, or gather feedback. I didnt want to rely on friends and collegaues due to the risk of bias opinion. I opted to try reddit... Not a conventional approach and arguably not much better than asking friends and family as I dont know the background of those that respond.</p>
-                            <Zoom>
-                                <Image src="/review.png" layout="intrinsic" className="rounded-2xl" width="1212" height="784" alt="Beer review - An early example of how a review may be displayed"   />
-                            </Zoom>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Feedback</h2>
                             <p className="text-base font-medium">My approach of using reddit was not something I would usually do. It is not focused enough to gain true user insights and instead relies on the people commenting understanding the use case and having some design knowledge.</p>
                             <p className="mb-16 text-base font-medium">However, ignoring the above, the response from the unknown people reviewing my UI was positive. This was reassuring and also gave me some ideas for iterations.</p>
