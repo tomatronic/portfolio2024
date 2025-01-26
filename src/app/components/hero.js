@@ -13,16 +13,16 @@ export default function Hero() {
       viewport={{ once: true }}
       className="container relative z-10 mx-auto max-w-screen-lg px-4 py-16"
     >
-      <div className="grid h-full grid-cols-1 content-center justify-center gap-6">
+      <div className="grid h-full grid-cols-1 content-center justify-center gap-4">
         <div>
           <p className="text-balance text-center text-xl text-gray-100 md:text-left md:text-2xl">Hi <WavingHand />, I'm Tom</p>
         </div>
         <div>
-          <h1 className="max-w-3xl text-balance text-center text-3xl font-bold leading-tight tracking-normal text-gray-100 md:max-w-2xl md:text-left md:text-4xl dark:text-white">I'm a UX Designer crafting experiences that feel effortless and enjoyable one pixel at a time.</h1>
+          <h1 className="text-balance text-center text-3xl font-bold leading-tight tracking-normal text-gray-100 md:text-left md:text-5xl dark:text-white">A UX Designer creating impactful experiences that work for everyone.</h1>
         </div>
 
         <div>
-          <p className="text-center text-sm font-medium uppercase text-gray-100 md:text-left">
+          <p className="pt-4 text-center text-sm font-medium uppercase text-gray-100 md:text-left">
             Senior UX designer @ <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a>
           </p>
         </div>
