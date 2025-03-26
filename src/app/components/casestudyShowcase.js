@@ -64,7 +64,7 @@ function CasestudyShowcase() {
                 <div className="text-sm font-medium uppercase text-gray-600">Brewtiful</div>
                 <h2 className="text-3xl font-semibold tracking-tight text-gray-700">Creating an engaging craft beer brand and blog</h2>
                 <p className="pb-4 text-base font-medium text-gray-700 dark:text-gray-400">
-                A passion project taking a craft beer community blog through the full UX process — I still hope to bring it to life one day.
+                A passion project taking a craft beer community blog through the full UX process — I still hope to bring this to life one day.
                 </p>
                 <Link href="/casestudy/Brewtiful" className="self-start">
                 <button className="rounded-xl border border-gray-300 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
