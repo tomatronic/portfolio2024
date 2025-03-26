@@ -38,7 +38,7 @@ export default function ExampleGallery() {
                         <div className="grid gap-4">
                             <div>
                                 <Zoom>
-                                    <Image src="/beerapp.gif" alt="Tom Spencer - Senior UX Designer" width={1000} height={728} className="h-auto max-w-full rounded-lg" />
+                                    <Image src="/beerapp.gif" alt="Tom Spencer - Senior UX Designer" width={1000} height={728} className="h-auto max-w-full rounded-lg" unoptimized />
                                 </Zoom>
                             </div>
                             <div>
@@ -51,7 +51,7 @@ export default function ExampleGallery() {
                         <div className="grid gap-4">
                             <div>
                             <Zoom>
-                                <Image src="/todoList.gif" alt="Tom Spencer - Senior UX Designer" width={472} height={350} className="h-auto max-w-full rounded-lg" />
+                                <Image src="/todoList.gif" alt="Tom Spencer - Senior UX Designer" width={472} height={350} className="h-auto max-w-full rounded-lg" unoptimized />
                             </Zoom>
                             </div>
                             <div>

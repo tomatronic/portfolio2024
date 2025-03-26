@@ -11,6 +11,13 @@ const openSans = Open_Sans({
   display: 'swap' 
 });
 
+export async function generateMetadata() {
+  return {
+    title: "Tom Spencer - UX Designer",
+    description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
+    }
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={openSans.className}>  
