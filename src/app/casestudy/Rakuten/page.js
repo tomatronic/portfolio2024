@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Zoom from "react-medium-image-zoom"
 
 export async function generateMetadata() {
