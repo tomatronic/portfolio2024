@@ -116,7 +116,7 @@ function BeerBlog() {
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Final mocks</h2>
                             <p className="mb-16 text-base font-medium">Armed with some feedback from the reddit community I decided to go ahead and make a few tweaks before settling on a design.</p>
                             <Zoom>
-                                <Image src="/brewtiful.png" layout="intrinsic" className="rounded-2xl" width="1212" height="784" alt="Brewtiful - The current hi-fidelity mocks"   />
+                                <Image src="/brewtiful.png" layout="intrinsic" className="rounded-2xl" width="1211" height="1567" alt="Brewtiful - The current hi-fidelity mocks"   />
                             </Zoom>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Project reflection</h2>
                             <p className="mb-16 text-base font-medium">Being a personal project I am happy with where I have got to. I hope in the future to iterate on this further and maybe even take a dive into building this into a real life website.</p>
