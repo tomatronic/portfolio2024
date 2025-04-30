@@ -17,51 +17,51 @@ export default function ExampleGallery() {
                                     <Image src="/donutmock.png" alt="Concept delivery app for a fictional donut company" width={472} height={600} className="h-auto max-w-full rounded-lg" />
                                 </Zoom>
                             </div>
-                            <div>
+                            {/* <div>
                                 <Image className="h-auto max-w-full rounded-lg" src="/236x300.png" alt="" width={472} height={600} />
                             </div>
                             <div>                                
                                 <Image className="h-auto max-w-full rounded-lg" src="/236x175.png" alt="" width={472} height={350} />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="grid gap-4">
                             <Zoom>
                                 <Image src="/404.png" alt="404 page illustration iteration" width={236} height={236} className="h-auto max-w-full rounded-lg" />
                             </Zoom>
-                            <div>
+                            {/* <div>
                             <Image className="h-auto max-w-full rounded-lg" src="/236x236.png" alt="" width={472} height={472} />
                             </div>
                             <div>                                
                             <Image className="h-auto max-w-full rounded-lg" src="/236x300.png" alt="" width={472} height={600} />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="grid gap-4">
                             <div>
                                 <Zoom>
-                                    <Image src="/beerapp.gif" alt="Tom Spencer - Senior UX Designer" width={472} height={710} className="h-auto max-w-full rounded-lg" unoptimized />
+                                    <Image src="/beerapp.gif" alt="Mobile app design - Beer app" width={472} height={710} className="h-auto max-w-full rounded-lg" unoptimized />
                                 </Zoom>
                             </div>
-                            <div>
+                            {/* <div>
                                 <Image className="h-auto max-w-full rounded-lg" src="/236x175.png" alt="" width={472} height={350} />
                             </div>
                             <div>
                             <Image className="h-auto max-w-full rounded-lg" src="/236x236.png" alt="" width={472} height={472} />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="grid gap-4">
                             <div>
                             <Zoom>
-                                <Image src="/todoList.gif" alt="Tom Spencer - Senior UX Designer" width={472} height={350} className="h-auto max-w-full rounded-lg" unoptimized />
+                                <Image src="/todoList.gif" alt="UI design - To do list mobile app" width={472} height={350} className="h-auto max-w-full rounded-lg" unoptimized />
                             </Zoom>
                             </div>
-                            <div>
+                            {/* <div>
                                 <Image className="h-auto max-w-full rounded-lg" src="/236x300.png" alt="" width={472} height={600} />   
                             </div>
                             <div>
                                 
                                 <Image className="h-auto max-w-full rounded-lg" src="/236x300.png" alt="" width={472} height={600} />
                                 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
