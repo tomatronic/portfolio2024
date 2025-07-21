@@ -7,10 +7,10 @@ import ExampleGallery from './components/examples';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div>
       <Hero />
       <CasestudyShowcase />
-      <ExampleGallery />      
+      <ExampleGallery />
     </div>
   );
 }
