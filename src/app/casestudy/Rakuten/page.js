@@ -18,7 +18,7 @@ function Offer() {
                     <div className="mx-auto grid h-full max-w-screen-md place-items-center">
                         <div>
                             <Zoom>
-                                <Image src="/offersFull.png" layout="intrinsic" width="1000" height="640" alt="Small mock of end product" priority={true} />
+                                <img src="/offersFull.png" width="1000" height="640" alt="Small mock of end product" />
                             </Zoom>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <Image src="/affinitymap.jpg" className="rounded-2xl" layout="intrinsic" width="1386" height="721" alt="The affinity map was created to help understand the results from the completed user surveys" />
+                                    <img src="/affinitymap.jpg" className="rounded-2xl" width="1386" height="721" alt="The affinity map was created to help understand the results from the completed user surveys" />
                                 </Zoom>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <Image src="/flowchart.png" className="rounded-2xl" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
+                                    <img src="/flowchart.png" className="rounded-2xl" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
                                 </Zoom>
                             </div>
                             <div>
@@ -105,7 +105,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <Image src="/sketches.png" className="rounded-2xl" layout="intrinsic" width="1116" height="766" alt="Initial sketches and ideas - A bit messy but helps me gather thoughts" />
+                                    <img src="/sketches.png" className="rounded-2xl" width="1116" height="766" alt="Initial sketches and ideas - A bit messy but helps me gather thoughts" />
                                 </Zoom>
                             </div>
                             <div>
@@ -114,7 +114,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <Image src="/digitalwireframe.png" className="rounded-2xl" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
+                                    <img src="/digitalwireframe.png" className="rounded-2xl" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
                                 </Zoom>
                             </div>
                             <div>
@@ -123,7 +123,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <Image src="/prototypeMap.png" className="rounded-2xl" layout="intrinsic" width="1403" height="931" alt="An example of the complex web of interactions created to allow for testing of the prototype" />
+                                    <img src="/prototypeMap.png" className="rounded-2xl" width="1403" height="931" alt="An example of the complex web of interactions created to allow for testing of the prototype" />
                                 </Zoom>
                             </div>
                             <div>
@@ -132,7 +132,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <Image src="/usertestingOffers.png" className="rounded-2xl" layout="intrinsic" width="1849" height="900" alt="An example of the complex web of interactions created to allow for testing of the prototype with external users" />
+                                    <img src="/usertestingOffers.png" className="rounded-2xl" width="1849" height="900" alt="An example of the complex web of interactions created to allow for testing of the prototype with external users" />
                                 </Zoom>
                             </div>
                             <div>
@@ -142,7 +142,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <Image src="/after.png" className="rounded-2xl" layout="intrinsic" width="2435" height="1544" alt="The final offer invitation screen" />
+                                    <img src="/after.png" className="rounded-2xl" width="2435" height="1544" alt="The final offer invitation screen" />
                                 </Zoom>
                             </div>
                             <div>
