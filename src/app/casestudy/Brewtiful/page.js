@@ -15,7 +15,7 @@ function BeerBlog() {
     return (
         <>
             <div className="mt-4">
-                <div className="container mx-auto h-[70vh] max-w-screen-lg rounded-2xl bg-[url('/backgroundBrew.png')] bg-cover">
+                <div className="container mx-auto h-[70vh] max-w-screen-xl rounded-2xl bg-[url('/backgroundBrew.png')] bg-cover">
                     <div className="mx-auto flex h-full max-w-screen-md flex-row flex-wrap place-content-center content-center">
                         <div className="flex flex-col">
                             <Zoom>

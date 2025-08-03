@@ -16,7 +16,7 @@ function CaseStudy() {
         <>
 
             <div className="mt-4">
-                <div className="container relative mx-auto h-[70vh] max-w-screen-lg rounded-2xl bg-[url('/dfbg.png')] bg-cover">
+                <div className="container relative mx-auto h-[70vh] max-w-screen-xl rounded-2xl bg-[url('/dfbg.png')] bg-cover">
                     <div className="mx-auto flex h-fit flex-row flex-wrap place-content-center content-center">
                         <div className="flex flex-col">
                                 <Image src="/tools.png" layout="fill" alt="Small mock of end product" className="object-cover" />

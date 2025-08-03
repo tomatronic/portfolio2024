@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from 'react';
 
 const CustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
   const animationRef = useRef();
   const mouseRef = useRef({ x: 0, y: 0 });
   const cursorRef = useRef({ x: 0, y: 0 });
@@ -37,17 +36,8 @@ const CustomCursor = () => {
       animationRef.current = requestAnimationFrame(animateCursor);
     };
 
-    const handleMouseEnter = () => setIsHovering(true);
-    const handleMouseLeave = () => setIsHovering(false);
-
     document.addEventListener('mousemove', updateMousePosition);
     animateCursor();
-
-    const interactiveElements = document.querySelectorAll('a, button, [data-cursor-hover]');
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseenter', handleMouseEnter);
-      el.addEventListener('mouseleave', handleMouseLeave);
-    });
 
     return () => {
       document.head.removeChild(style);
@@ -55,14 +45,8 @@ const CustomCursor = () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
       }
-      interactiveElements.forEach(el => {
-        el.removeEventListener('mouseenter', handleMouseEnter);
-        el.removeEventListener('mouseleave', handleMouseLeave);
-      });
     };
   }, []);
-
-  const size = isHovering ? 80 : 16;
 
   return (
     <div
@@ -70,40 +54,15 @@ const CustomCursor = () => {
         position: 'fixed',
         left: mousePosition.x,
         top: mousePosition.y,
-        width: `${size}px`,
-        height: `${size}px`,
+        width: '16px',
+        height: '16px',
         transform: 'translate(-50%, -50%)',
         pointerEvents: 'none',
         zIndex: 9999,
         borderRadius: '50%',
+        backgroundColor: '#BF90F8',
       }}
-    >
-      {/* Solid Color Layer */}
-      <div
-        style={{
-          width: '100%',
-          height: '100%',
-          backgroundColor: '#BF90F8', // your brand colour here
-          borderRadius: '50%',
-          transition: 'all 0.3s ease',
-        }}
-      />
-      {/* Invert Layer */}
-      {isHovering && (
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            borderRadius: '50%',
-            backdropFilter: 'invert(1)',
-            WebkitBackdropFilter: 'invert(1)',
-          }}
-        />
-      )}
-    </div>
+    />
   );
 };
 

@@ -7,7 +7,7 @@ export async function generateMetadata() {
 
 export default function About() {
     return (
-        <div className="bg-slate-950">           
+        <div>           
         <div className="container mx-auto max-w-screen-md px-6 pt-4">
         <div className="grid grid-cols-1 gap-14 py-10">        
 

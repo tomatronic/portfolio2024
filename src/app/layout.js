@@ -1,5 +1,4 @@
 import "./globals.css";
-import CustomCursor from './components/CustomCursor'
 import Navigation from './components/navigation';
 import Footer from "./components/footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -28,7 +27,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       </Head>
       <body>
-        <CustomCursor />
+        
         <Navigation />
         {children}
         <Footer />

@@ -11,19 +11,19 @@ export default function Hero() {
       whileInView={{y: 0, opacity: 1}}
       transition={{ ease: 'easeInOut', duration: 0.5 }}
       viewport={{ once: true }}
-      className="container relative z-10 mx-auto max-w-screen-lg px-4 py-16"
+      className="container relative z-10 mx-auto max-w-screen-xl px-4 py-16"
     >
       <div className="grid h-full grid-cols-1 content-center justify-center gap-4">
+        {/* <div>
+          <p className="text-balance text-center text-xl text-slate-950 md:text-3xl font-semibold">Hi <WavingHand /></p>
+        </div> */}
         <div>
-          <p className="text-balance text-center text-xl text-gray-100 md:text-left md:text-2xl">Hi <WavingHand />, I'm Tom</p>
-        </div>
-        <div>
-          <h1 className="text-balance text-center text-3xl font-bold leading-tight tracking-normal text-gray-100 md:text-left md:text-5xl dark:text-white">A UX Designer creating impactful experiences that work for everyone.</h1>
+          <h1 className="text-balance text-center text-3xl  leading-tight tracking-normal text-slate-950 md:text-6xl/22 dark:text-white font-semibold">I'm Tom, a UX designer creating impactful experiences that work for everyone.</h1>
         </div>
 
         <div>
-          <p className="pt-4 text-center text-sm font-medium uppercase text-gray-100 md:text-left">
-            Senior UX designer @ <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer"><span className="text-shadow-[2px_2px_0_#020617,-2px_-2px_0_#020617,2px_-2px_0_#020617,-2px_2px_0_#020617]">Rakuten Advertising</span></a>
+          <p className="pt-4 text-center text-sm font-medium uppercase text-slate-950">
+            Senior UX designer @ <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer"><span className="underline">Rakuten Advertising</span></a>
           </p>
         </div>
       </div>
