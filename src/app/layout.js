@@ -1,9 +1,11 @@
 import "./globals.css";
+import CustomCursor from './components/CustomCursor'
 import Navigation from './components/navigation';
 import Footer from "./components/footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Head from "next/head";
 import { Open_Sans } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/next"
 
 // Optimize font loading
 const openSans = Open_Sans({ 
@@ -26,10 +28,12 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       </Head>
       <body>
+        <CustomCursor />
         <Navigation />
         {children}
         <Footer />
         <GoogleAnalytics gaId="G-CCDKVM70NV" debug={true} />
+        <Analytics />
       </body>
     </html>
   );

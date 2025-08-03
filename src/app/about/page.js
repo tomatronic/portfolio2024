@@ -30,7 +30,7 @@ export default function About() {
                         <img src="/aboutBanner.png" alt="A little insight to my life" width="100%" />
                     </div>
                 <div>                            
-                        <p className="text-center">I'm always looking for opportunities for collaboration. <a href="mailto:tom.m.spencer+portfolio@gmail.com" className="hover:text-teal-400">Reach out and let's chat!</a></p>
+                        <p className="text-center">I'm always looking for opportunities for collaboration. <a href="mailto:tom.m.spencer+portfolio@gmail.com" className="">Reach out and let's chat!</a></p>
                 </div>
             </div>
         </div>

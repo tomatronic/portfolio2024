@@ -23,7 +23,7 @@ export default function Hero() {
 
         <div>
           <p className="pt-4 text-center text-sm font-medium uppercase text-gray-100 md:text-left">
-            Senior UX designer @ <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a>
+            Senior UX designer @ <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer"><span className="text-shadow-[2px_2px_0_#020617,-2px_-2px_0_#020617,2px_-2px_0_#020617,-2px_2px_0_#020617]">Rakuten Advertising</span></a>
           </p>
         </div>
       </div>

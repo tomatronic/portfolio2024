@@ -64,14 +64,13 @@ export default function Navigation() {
                 className="group relative text-base text-gray-100"
               >
                 <span className="relative z-10">Work</span>
-                <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-teal-400 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+                
               </Link>
               <Link 
                 href="/about" 
                 className="group relative text-base text-gray-100"
               >
                 <span className="relative z-10">About</span>
-                <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-teal-400 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
               </Link>
               <a
                 href="/resume.pdf"
@@ -80,7 +79,6 @@ export default function Navigation() {
                 rel="noopener noreferrer"
               >
                 <span className="relative z-10">Resume</span>
-                <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-teal-400 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
               </a>
             </div>
           </div>
