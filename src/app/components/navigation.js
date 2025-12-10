@@ -65,13 +65,13 @@ export default function Navigation() {
         <div className="container mx-auto max-w-screen-xl px-6 py-12 md:px-0">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-6 text-slate-950 transition duration-300 hover:text-gray-600">
-              <Image
+              {/* <Image
                 src="/static/tomspencer.png"
                 alt="Tom Spencer - Senior UX Designer"
                 width={48}
                 height={48}
                 className="rounded-full"
-              />
+              /> */}
               <span className="ml-4 text-lg font-bold uppercase tracking-wide">TOM SPENCER</span>
              </Link>
             
