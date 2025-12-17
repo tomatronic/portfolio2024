@@ -34,5 +34,6 @@ body {
     @apply border-slate-300;
     @apply pl-4;
     @apply text-slate-700;
+    @apply my-6;
   }
 }
