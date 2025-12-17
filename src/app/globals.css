@@ -21,11 +21,10 @@ body {
   }
 }
 
-/*
 @layer base {
   p {
     @apply text-base;
     @apply font-medium;
+    @apply leading-7;
   }
 }
-*/
