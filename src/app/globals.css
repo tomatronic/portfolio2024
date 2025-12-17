@@ -27,4 +27,12 @@ body {
     @apply font-medium;
     @apply leading-7;
   }
+
+  blockquote {
+    @apply italic;
+    @apply border-l-4;
+    @apply border-slate-300;
+    @apply pl-4;
+    @apply text-slate-700;
+  }
 }
