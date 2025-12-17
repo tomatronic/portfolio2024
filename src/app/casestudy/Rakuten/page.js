@@ -14,7 +14,7 @@ function Offer() {
     return (
         <>
             <div className="mt-4">
-                <div className="container mx-auto h-[70vh] max-w-screen-lg rounded-2xl bg-[url('/offerBG.png')] bg-cover">
+                <div className="container mx-auto h-[70vh] max-w-screen-xl rounded-2xl bg-[url('/offerBG.png')] bg-cover">
                     <div className="mx-auto grid h-full max-w-screen-md place-items-center">
                         <div>
                             <Zoom>
@@ -41,7 +41,7 @@ function Offer() {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto mb-16 grid max-w-screen-md overflow-hidden rounded-2xl border bg-white shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)]">
+                <div className="container mx-auto mb-16 grid max-w-screen-md overflow-hidden rounded-2xl">
                     <div className="m-6 grid gap-2">
                         <h2 className="text-xl font-semibold tracking-tight text-gray-700">Problem</h2>
                         <p className="m-0 text-gray-700">Managing offers is a cumbersome task, it involves multiple pages and unclear terminology that deters users from exploring options. The dashboard has also been neglected for many years and is in need of a UI overhaul.</p>
@@ -78,7 +78,7 @@ function Offer() {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto grid max-w-screen-md overflow-hidden rounded-2xl border bg-white shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)]">
+                <div className="container mx-auto grid max-w-screen-md overflow-hidden rounded-2xl">
                     <div className="m-6 grid gap-2 text-gray-700">
                         <h2 className="text-xl font-semibold tracking-tight">Goals</h2>
                         <p>Using survey data I was able to identify three main goals to focus on:</p>
