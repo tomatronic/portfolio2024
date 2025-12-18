@@ -61,34 +61,61 @@ function Prompt() {
                             <p className="text-base font-medium">I started by analysing our competitors (CJ affiliate and Impact) and also other top tier companies (Google analytics and mixpanel) providing journey visualisation. I noted what worked (clear aggregation, progressive disclosure) and what failed (showing too much at once, no actionable guidance).</p>
                             <p className="text-base font-medium">Through interviews with both internal (8 account managers) and external users, I learned:</p>
                             <ul className="space-y-3">
-                                <li>Publishers didn't want to see every journey—they wanted to see their contribution patterns and understand what this meant.</li>
+                                <li>Publishers didn't want to see <i>every</i> journey, they wanted to see their contribution patterns and understand what this meant.</li>
                                 <li>Advertisers wanted to identify "Which publishers work well together?" not just "Who gets last-click?"</li>
                                 <li>Both groups needed the data explained, not just displayed</li>
                             </ul>
-                            <p className="text-base font-medium">The key insight: Users wanted answers to specific questions, with the ability to dig deeper when needed. This shaped my entire approach: start with answers, allow exploration.</p>
+                            <p className="text-base font-medium"><b>The key insight</b>: Users wanted answers to specific questions, with the ability to dig deeper when needed. This shaped my entire approach: start with answers, allow exploration.</p>
                             <h3 className="pt-6 text-lg font-semibold tracking-tight">Key design decisions</h3>
                             <ul className="space-y-4 text-base font-medium">
-                                <li><b>Three-phase framework (Awareness → Consideration → Conversion)</b>: Rather than showing raw click sequences, journeys are organised around purchase phases. This simplified multi-touch attribution and gave publishers language to prove value beyond last click.</li>
-                                <li><b>Two-tab structure: Contributions vs. Touchpoints</b>: Contributions provides a high-level summary; Touchpoints reveals detailed paths for power users—keeping the interface scannable while enabling drill-down.</li>
-                                <li><b>Activity summary first</b>: Users first see total clicks across phases, average clicks to conversion, and baseline contribution footprint to set context before exploring individual journeys.</li>
-                                <li><b>Flexible filtering without overload</b>: Users can adjust order period and lookback window (30-day default) to view how attribution changes while keeping defaults sensible.</li>
-                                <li><b>Handling overlapping journeys</b>: Multiple purchases by the same customer create confusing attribution. Instead of hiding or over-complicating the UI, we documented the logic clearly in help content with concrete examples.</li>
-                                <li><b>Dual-audience design</b>: Publishers see their contribution view; advertisers see all publishers in the journey. One core visualization adapts via filters and copy, serving both without duplicating the tool.</li>
+                                <li><b>Three-phase framework (Awareness → Consideration → Conversion)</b>: Rather than showing raw click sequences, I organised journeys based around purchase phases. This created a mental model: "Am I/a Publisher driving discovery, research, or final purchase?"
+                                    This framework solved two critical problems:
+                                    It simplified multi-touch attribution into digestible stages
+                                    It gave publishers language to prove their value beyond last-click: “I am strong in awareness” becomes a selling point, not a liability
+                                    Other frameworks considered (first/middle/last click, paid/organic/direct channels) didn't align as well with the awareness/consideration/conversion model, which aligned best with how marketers already think about funnels.
+                                </li>
+                                <li><b>Two-tab structure: Contributions vs. Touchpoints</b>: Contributions tab: High-level summary ("You contributed to 45% of conversions in the awareness phase")
+                                    Touchpoints tab: Detailed journey paths for users who wanted to dig deeper
+                                    This progressive disclosure kept the interface scannable while allowing power users to drill down.
+                                </li>
+                                <li><b>Activity summary</b>: Instead of starting with complex paths, users first see:
+                                    Total clicks across phases
+                                    Average clicks to conversion
+                                    Their baseline contribution footprint
+                                    This gives context before diving into individual journeys.
+                                </li>
+                                <li><b>Flexible filtering without cognitive overload</b>: Users can adjust order period and lookback window. The 30-day lookback default balances comprehensiveness with clarity.</li>
+                                <li><b>Handling the 'overlapping journeys' problem</b>: This was the trickiest UX challenge. When the same customer makes multiple purchases, clicks from earlier journeys count toward later ones. Technically, this is accurate, but in practice it is confusing.
+
+                                    I considered 3 approaches:
+                                    a) Hide this complexity (users would likely notice inconsistencies leading to increased pressure on the support teams and Account managers)
+                                    b) Show adjusted numbers in the UI (Too complicated to explain inline)
+                                    c) Explain it in the help center with clear examples (this was the chosen method)
+                                    Rather than trying to solve this entirely in the UI, I worked with the support team to create clear help documentation with concrete examples that explained the logic.
+                                </li>
+                                <li><b>Dual-audience design</b>: Publishers see their own contribution. Advertisers see all publishers in the journey. Same data structure, different views. I designed the core visualisation to work for both, then customised the filtering and copy for each user type.</li>
                             </ul>
                             <h3 className="pt-10 text-lg font-semibold tracking-tight">Prototyping & testing</h3>
-                            <p className="text-base font-medium">I built interactive prototypes to validate whether the UI told a coherent narrative and answered core questions. Early testing showed timelines were too dense, so I shifted to a directional UI that better conveyed the journey story.</p>
-                            <p className="text-base font-medium">The revised flows improved comprehension and reduced support questions, while still giving power users access to deeper paths.</p>
-                            <Zoom>
-                                <img src="/initialDoodle.png" className="rounded-2xl" width="1000" height="774" alt="Some very messy initial thoughts on what I wanted to include and the direction I could take a name" />
-                            </Zoom>
+                            <p className="text-base font-medium">I built interactive prototypes and tested with users to understand if the UI worked and provided users with the narrative they could learn from.</p>
+                            <p className="text-base font-medium">In the first round of testing we found our timelines were a little complicated and opted to use an alternate UI in order to imply direction for the journey being viewed, this better represented the story being told and helped ensure accuracy in representation.</p>
+                            
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Solution</h2>
-                            <p className="text-base font-medium">The final solution used progressive disclosure to guide users from high-level insights to detailed exploration. A three-phased framework made attribution data digestible.</p>
+                            <p className="text-base font-medium">The final solution used progressive disclosure to help guide users from high level insights to more detailed exploration. A three phased framework helped make attribution data much more digestible.</p>
                             <div className="space-y-6 text-base font-medium">
-                                <p><b>Activity summary</b>: Key metrics (total clicks by phase, average clicks to conversion, baseline contribution footprint) answer “How am I performing across the funnel?” before users dive into journeys.</p>
-                                <p><b>Contributions tab</b>: Breaks down publisher involvement across awareness, consideration, and conversion phases—giving clear language to discuss value beyond last click.</p>
-                                <p><b>Touchpoints tab</b>: Reveals detailed conversion paths so users can see exactly how customers move through the funnel.</p>
-                                <p><b>Filtering</b>: Adjustable order period and lookback windows (30-day default) show how attribution shifts over time without cognitive overload.</p>
-                                <p><b>Dual-audience view</b>: Publishers see their own contribution highlighted; advertisers see all publishers in each journey—one core visualization adapted via filters and copy.</p>
+                            <Zoom>
+                                <img src="/activitySummary.png" width="1000" height="774" alt="Users first see an activity summary with total clicks across phases, average clicks to conversion, and their baseline contribution footprint—providing context before diving into detailed journeys." />
+                            </Zoom>
+                                <p><b>Activity summary</b>: Raw data can be daunting, by presenting key metrics that quickly answer questions like “How am I performing across the funnel” we help a user quickly understand how their account is doing.</p>
+                                <Zoom>
+                                <img src="/contributions.png" width="1000" height="774" alt="The Contributions tab breaks down publisher involvement across awareness, consideration, and conversion phases—giving users clear language to discuss their value beyond last-click attribution." />
+                                </Zoom>
+                                <p><b>Contributions tab</b>: The three-phase framework (Awareness → Consideration → Conversion) transformed abstract click sequences into a clear narrative. Publishers could now say "I drive 40% of awareness conversions" instead of struggling to explain their role. Advertisers could identify which publishers were performing well at different stages of the journey.</p>
+                                <p><b>Touchpoints tab</b>: Our users could explore journeys in more detail, really understanding which touchpoint sequences benefitted them most.</p>
+                                <Zoom>
+                                <img src="/filter_selected.png" width="1000" height="774" alt="Users could adjust order period and lookback window to see how attribution changed—with smart defaults (30-day lookback, month-to-date) and inline helper text preventing confusion." />
+                                </Zoom>
+                                <p><b>Filtering</b>: The filtering system gave users control over their view while preventing cognitive overload. A 7-day lookback showed recent, tight attribution, a 30-day lookback captured longer consideration cycles. Users could experiment with different windows to understand how attribution timing affected their contribution numbers.</p>
+                                <p><b>Dual-audience view</b>: Rather than building two separate tools, one core visualization adapted based on user type. Publishers filtered by their own SIDs and saw "you" language. Advertisers filtered by campaign or publisher group and saw top contributors. Same data structure, different views, serving both audiences without doubling engineering effort.</p>
                             </div>
                             <div className="pb-16 text-base font-medium">
                                 <Zoom>
@@ -98,9 +125,15 @@ function Prompt() {
                             <div className="max-w-full py-5">
                                 <h2 className="text-xl font-semibold tracking-tight text-gray-700">Outcome</h2>
                                 <div className="space-y-4 text-base font-medium text-gray-700">
-                                    <p><b>Development & launch:</b> 8-month build (Oct 2022 – Jun 2023) with a cross-functional team; released to all eligible publishers and advertisers.</p>
-                                    <p><b>Adoption & usage:</b> ~35 daily active users exploring multi-touch attribution; now part of the standard analytics offering across the platform.</p>
-                                    <p><b>Business impact:</b> Used in sales pitches as a differentiator; closed a competitive gap vs. Impact and CJ Affiliate.</p>
+                                    <p><b>Development & launch:</b> 8-month development from concept to production (October 2022 - June 2023)
+                                        - Sole designer on a cross-functional team (PM, project manager, developers, QA)
+                                        - Launched to all eligible publishers and advertisers in June 2023</p>
+                                    <p><b>Adoption & usage:</b>- Averages 35 daily active users exploring multi-touch attribution data
+                                        - Available to 100% of publishers and advertisers on the Rakuten platform
+                                        - Feature became a standard part of the platform's analytics offering</p>
+                                    <p><b>Business impact:</b> - Used in sales pitches to prospective advertisers as a key differentiator
+                                        - Helped Rakuten compete with networks like Impact and CJ Affiliate that offered similar journey tracking
+                                        - Addressed a critical competitive gap identified by the sales team</p>
                                     <div>
                                         <p><b>What this enabled for publishers:</b></p>
                                         <ul className="list-disc list-inside space-y-1">
@@ -114,10 +147,10 @@ function Prompt() {
                                         <ul className="list-disc list-inside space-y-1">
                                             <li>Understood which publisher combinations drive the best results.</li>
                                             <li>Optimized partner mix based on full-funnel contribution.</li>
-                                            <li>Made more informed budget allocation decisions.</li>
+                                            <li>More informed budget allocation decisions across awareness, consideration, and conversion</li>
                                         </ul>
                                     </div>
-                                    <p><b>What surprised me:</b> Users engaged more with the Contributions tab (high-level answers) than the Touchpoints tab (raw paths). Clear narratives beat exhaustive exploration.</p>
+                                    <p><b>What surprised me:</b> Users engaged more with the Contributions tab (high-level summary) than the Touchpoints tab (detailed journey paths). They wanted answers to specific questions, “Am I valuable in awareness?” or “Which publishers work well together?”, more than open-ended data exploration. This reinforced that data visualisation guides users toward specific insights rather than overwhelming them with raw information.</p>
                                 </div>
                             </div>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">What I learned</h2>

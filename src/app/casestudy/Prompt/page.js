@@ -58,21 +58,20 @@ function Prompt() {
                                 <li><b>Fallback</b>: Some users are not ready for AI and still want the manual control, how can we ensure this option is still available to them?</li>
                             </ul>
                             <Zoom>
-                                <img src="/sampleBeer.png" className="rounded-2xl" width="500" height="542" alt="I had previously begun exploring ways of documenting beers I had sampled" />
+                                <img src="/old.png" className="rounded-2xl" width="500" height="542" alt="I had previously begun exploring ways of documenting beers I had sampled" />
                             </Zoom>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Approach</h2>
-                            <p className="text-base font-medium">I started by analyzing existing reports to understand common patterns: what metrics did users combine, which date ranges mattered, and what questions they were trying to answer. This informed the AI prompt design. Instead of only free-form text, I added suggested questions to guide new users and a later tag system to surface data points that were harder to remember.</p>
+                            <p className="text-base font-medium">I started by analyzing existing reports to understand common patterns: What metrics did users combine? What date ranges mattered? What questions were they trying to answer? This informed the AI prompt design. Instead of just free-form text, I included suggested questions to help a user get started and understand the mechanics of the input box. We also included a ‘tag’ system in a later iteration to help users find and include certain data points that were harder to remember.</p>
                             <h3 className="pt-4 text-lg font-semibold tracking-tight">Key decisions</h3>
                             <ul className="space-y-3 text-base font-medium">
-                                <li><b>Tags/Tokens</b>: Quick-select tags helped users direct prompts toward specific metrics.</li>
-                                <li><b>Manual override</b>: Every AI-generated report remained fully editable, saveable, schedulable, or rebuildable from scratch.</li>
-                                <li><b>Feedback loop</b>: Fullstory insights drove UI and functionality refinements.</li>
-                                <li><b>Conservative defaults</b>: Suggested safe, common queries instead of trying to be overly clever.</li>
-                                <li><b>Prototyped variants</b>: Tested three interaction models; suggestions plus tags proved best for complex report needs.</li>
+                                <li><b>Tags/Tokens</b>: Users were able to include 'quick selected' tags to help direct a prompt better.</li>
+                                <li><b>Manual override</b>: Every AI-generated report could be edited, saved, scheduled for a future date or rebuilt from scratch</li>
+                                <li><b>Feedback</b>: Gathering feedback via Fullstory we were able to make further decisions in the UI and functionality to help continually improve the feature.</li>
+                                <li><b>Conservative defaults</b>: The AI suggested safe, common queries rather than trying to be clever</li>
                             </ul>
-                            <Zoom>
-                                <img src="/initialDoodle.png" className="rounded-2xl" width="1000" height="774" alt="Some very messy initial thoughts on what I wanted to include and the direction I could take a name" />
-                            </Zoom>
+                            <p className="mb-16 text-base font-medium">
+                            I prototyped three interaction models and tested them with multiple users. The ability to select suggestions won over many participants and the addition of tags was identified as an extremely helpful approach to more complex report requirements.
+                            </p>                            
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Solution</h2>
                             <p className="text-base font-medium">The final solution combined natural language prompts, structured tags, and suggested queries to give users both speed and control. Every AI-generated report remained fully editable, could be saved as a template, or rebuilt from scratch—preserving the manual workflow for users who preferred it.
                             </p>
@@ -118,9 +117,9 @@ function Prompt() {
                                 </Zoom>
                             </div>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">What I learned</h2>
-                            <p className="text-base font-medium">Designing AI features for consumer products is about trust, not magic. Users want help, not replacement. The ability for users to control the outcome of a report became crucial—the full text-to-report approach had to be revised so users could steer results and trust the data.</p>
-                            <p className="text-base font-medium">The final outcome is a hybrid interface: conversational prompts plus tags for precision. For large data sets, precision beats novelty; sometimes smart autocomplete is better than a chatbot.</p>
-                            <p className="text-base font-medium">Speed gains alone aren’t enough—trust in the data is what makes the feature valuable.</p>
+                            <p className="text-base font-medium">Designing AI features for consumer products is about trust, not magic. Users want help, not replacement. The ability for users to control the outcome of a report became crucial, the full text to report approach had to be revised to ensure a user could take control and understand that the report would be exactly what they wanted and that the data could be trusted.</p>
+                            <p className="text-base font-medium">The final outcome saw the creation of a hybrid interface. The expectation was that users would prefer a pure conversational AI, but the tag system allowed more accurate control. When managing large amounts of data precision matters. This insight will help me shape future projects that include AI features. Sometimes a smart autocomplete may be better than a chatbot.</p>
+                            <p className="text-base font-medium">The improved speed of the custom report generation was a positive, but without trust it is worthless. Ensuring that the data presented is trustworthy is the key to this project being a success.</p>
                             <Zoom>
                                 <Image src="/brewtifulIA.png" className="rounded-2xl" layout="intrinsic" width="1392" height="622" alt="My inital decision for the IA of the new site. Kept a fairly flat IA." />
                             </Zoom>
