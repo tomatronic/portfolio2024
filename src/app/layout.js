@@ -2,7 +2,6 @@ import "./globals.css";
 import Navigation from './components/navigation';
 import Footer from "./components/footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Head from "next/head";
 import { Open_Sans } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next"
 
@@ -22,12 +21,7 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={openSans.className}>  
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-      </Head>
       <body>
-        
         <Navigation />
         {children}
         <Footer />

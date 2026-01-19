@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import React from "react"
 import Zoom from "react-medium-image-zoom"
 import 'react-medium-image-zoom/dist/styles.css'
@@ -19,7 +19,7 @@ function Influencer() {
                     <div className="mx-auto flex h-full max-w-screen-md flex-row flex-wrap place-content-center content-center">
                         <div className="flex flex-col">
                             <Zoom>
-                                <img src="/brewtifulBg.png" width="1600" height="927" alt="Small mock of end product" />
+                                <Image src="/brewtifulBg.png" width={1600} height={927} alt="Small mock of end product" />
                             </Zoom>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ function Influencer() {
                             </ul>
                             <div className="mb-20">
                                 <Zoom>
-                                    <img src="/sampleBeer.png" className="w-full rounded-2xl" width="500" height="542" alt="I had previously begun exploring ways of documenting beers I had sampled" />
+                                    <Image src="/sampleBeer.png" className="w-full rounded-2xl" width={500} height={542} alt="I had previously begun exploring ways of documenting beers I had sampled" />
                                 </Zoom>
                             </div>
                             <h2 className="pt-20 text-2xl font-semibold leading-tight tracking-tight mb-8">Key Decisions</h2>
@@ -139,7 +139,7 @@ function Influencer() {
                             </p>
                             <div className="mb-20">
                                 <Zoom>
-                                    <img src="/initialDoodle.png" className="w-full rounded-2xl" width="1000" height="774" alt="Some very messy initial thoughts on what I wanted to include and the direction I could take a name" />
+                                    <Image src="/initialDoodle.png" className="w-full rounded-2xl" width={1000} height={774} alt="Some very messy initial thoughts on what I wanted to include and the direction I could take a name" />
                                 </Zoom>
                             </div>
                             <h2 className="pt-20 text-2xl font-semibold leading-tight tracking-tight mb-8">Testing and iteration</h2>
@@ -150,7 +150,7 @@ function Influencer() {
                             </div>
                             <div className="mb-20">
                                 <Zoom>
-                                    <img src="/brewComp.png" className="w-full rounded-2xl" width="2390" height="1206" alt="Competitor research - Investigating the craft beer and design review landscape" />
+                                    <Image src="/brewComp.png" className="w-full rounded-2xl" width={2390} height={1206} alt="Competitor research - Investigating the craft beer and design review landscape" />
                                 </Zoom>
                             </div>
                             <h2 className="pt-20 text-2xl font-semibold leading-tight tracking-tight mb-8">The solution</h2>
@@ -209,10 +209,10 @@ function Influencer() {
 
                             <div className="mb-20 space-y-8">
                                 <Zoom>
-                                    <img src="/beerLover.png" className="w-full rounded-2xl" width="1684" height="1190" alt="User Persona A - The user persona of a beer lover" />
+                                    <Image src="/beerLover.png" className="w-full rounded-2xl" width={1684} height={1190} alt="User Persona A - The user persona of a beer lover" />
                                 </Zoom>
                                 <Zoom>
-                                    <img src="/designLover.png" className="w-full rounded-2xl" width="1684" height="1190" alt="User Persona B - The user persona of a design lover" />
+                                    <Image src="/designLover.png" className="w-full rounded-2xl" width={1684} height={1190} alt="User Persona B - The user persona of a design lover" />
                                 </Zoom>
                             </div>                            
                             <br /><br /><br />

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Zoom from "react-medium-image-zoom"
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -18,7 +18,7 @@ function Offer() {
                     <div className="mx-auto grid h-full max-w-screen-md place-items-center">
                         <div>
                             <Zoom>
-                                <img src="/offersFull.png" width="1000" height="640" alt="Small mock of end product" />
+                                <Image src="/offersFull.png" width={1000} height={640} alt="Small mock of end product" />
                             </Zoom>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <Image src="/legacy1.png" className="rounded-2xl" layout="intrinsic" width="1952" height="1200" alt="The legacy dashboard offer invitation screen" />
+                                    <Image src="/legacy1.png" className="rounded-2xl" width={1952} height={1200} alt="The legacy dashboard offer invitation screen" />
                                 </Zoom>
                             </div>
                             <div>
@@ -72,7 +72,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <img src="/affinitymap.jpg" className="rounded-2xl" width="1386" height="721" alt="The affinity map was created to help understand the results from the completed user surveys" />
+                                    <Image src="/affinitymap.jpg" className="rounded-2xl" width={1386} height={721} alt="The affinity map was created to help understand the results from the completed user surveys" />
                                 </Zoom>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <img src="/flowchart.png" className="rounded-2xl" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
+                                    <Image src="/flowchart.png" className="rounded-2xl" width={1116} height={766} alt="Simple flowchart of a proposed solution" />
                                 </Zoom>
                             </div>
                             <div>
@@ -105,7 +105,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <img src="/sketches.png" className="rounded-2xl" width="1116" height="766" alt="Initial sketches and ideas - A bit messy but helps me gather thoughts" />
+                                    <Image src="/sketches.png" className="rounded-2xl" width={1116} height={766} alt="Initial sketches and ideas - A bit messy but helps me gather thoughts" />
                                 </Zoom>
                             </div>
                             <div>
@@ -114,7 +114,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <img src="/digitalwireframe.png" className="rounded-2xl" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
+                                    <Image src="/digitalwireframe.png" className="rounded-2xl" width={1116} height={766} alt="Simple flowchart of a proposed solution" />
                                 </Zoom>
                             </div>
                             <div>
@@ -123,7 +123,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <img src="/prototypeMap.png" className="rounded-2xl" width="1403" height="931" alt="An example of the complex web of interactions created to allow for testing of the prototype" />
+                                    <Image src="/prototypeMap.png" className="rounded-2xl" width={1403} height={931} alt="An example of the complex web of interactions created to allow for testing of the prototype" />
                                 </Zoom>
                             </div>
                             <div>
@@ -132,7 +132,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <img src="/usertestingOffers.png" className="rounded-2xl" width="1849" height="900" alt="An example of the complex web of interactions created to allow for testing of the prototype with external users" />
+                                    <Image src="/usertestingOffers.png" className="rounded-2xl" width={1849} height={900} alt="An example of the complex web of interactions created to allow for testing of the prototype with external users" />
                                 </Zoom>
                             </div>
                             <div>
@@ -142,7 +142,7 @@ function Offer() {
                             </div>
                             <div>
                                 <Zoom>
-                                    <img src="/after.png" className="rounded-2xl" width="2435" height="1544" alt="The final offer invitation screen" />
+                                    <Image src="/after.png" className="rounded-2xl" width={2435} height={1544} alt="The final offer invitation screen" />
                                 </Zoom>
                             </div>
                             <div>

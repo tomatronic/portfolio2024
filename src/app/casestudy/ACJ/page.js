@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import React from "react"
 import Zoom from "react-medium-image-zoom"
 import 'react-medium-image-zoom/dist/styles.css'
@@ -19,7 +19,7 @@ function Prompt() {
                     <div className="mx-auto flex h-full max-w-screen-md flex-row flex-wrap place-content-center content-center">
                         <div className="flex flex-col">
                             <Zoom>
-                                <img src="/brewtifulBg.png" width="1600" height="927" alt="Small mock of end product" />
+                                <Image src="/brewtifulBg.png" width={1600} height={927} alt="Small mock of end product" />
                             </Zoom>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ function Prompt() {
                                 <li><b>Trust</b>: Users needed to trust the data enough to make budget decisions, which meant explaining the complex attribution logic without overwhelming them.</li>
                             </ul>
                             <Zoom>
-                                <img src="/sampleBeer.png" className="rounded-2xl" width="500" height="542" alt="I had previously begun exploring ways of documenting beers I had sampled" />
+                                <Image src="/sampleBeer.png" className="rounded-2xl" width={500} height={542} alt="I had previously begun exploring ways of documenting beers I had sampled" />
                             </Zoom>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Approach</h2>
                             <p className="text-base font-medium">I started by analysing our competitors (CJ affiliate and Impact) and also other top tier companies (Google analytics and mixpanel) providing journey visualisation. I noted what worked (clear aggregation, progressive disclosure) and what failed (showing too much at once, no actionable guidance).</p>
@@ -103,23 +103,23 @@ function Prompt() {
                             <p className="text-base font-medium">The final solution used progressive disclosure to help guide users from high level insights to more detailed exploration. A three phased framework helped make attribution data much more digestible.</p>
                             <div className="space-y-6 text-base font-medium">
                             <Zoom>
-                                <img src="/activitySummary.png" width="1000" height="774" alt="Users first see an activity summary with total clicks across phases, average clicks to conversion, and their baseline contribution footprint—providing context before diving into detailed journeys." />
+                                <Image src="/activitySummary.png" width={1000} height={774} alt="Users first see an activity summary with total clicks across phases, average clicks to conversion, and their baseline contribution footprint—providing context before diving into detailed journeys." />
                             </Zoom>
-                                <p><b>Activity summary</b>: Raw data can be daunting, by presenting key metrics that quickly answer questions like “How am I performing across the funnel” we help a user quickly understand how their account is doing.</p>
+                                <p><b>Activity summary</b>: Raw data can be daunting, by presenting key metrics that quickly answer questions like "How am I performing across the funnel" we help a user quickly understand how their account is doing.</p>
                                 <Zoom>
-                                <img src="/contributions.png" width="1000" height="774" alt="The Contributions tab breaks down publisher involvement across awareness, consideration, and conversion phases—giving users clear language to discuss their value beyond last-click attribution." />
+                                <Image src="/contributions.png" width={1000} height={774} alt="The Contributions tab breaks down publisher involvement across awareness, consideration, and conversion phases—giving users clear language to discuss their value beyond last-click attribution." />
                                 </Zoom>
                                 <p><b>Contributions tab</b>: The three-phase framework (Awareness → Consideration → Conversion) transformed abstract click sequences into a clear narrative. Publishers could now say "I drive 40% of awareness conversions" instead of struggling to explain their role. Advertisers could identify which publishers were performing well at different stages of the journey.</p>
                                 <p><b>Touchpoints tab</b>: Our users could explore journeys in more detail, really understanding which touchpoint sequences benefitted them most.</p>
                                 <Zoom>
-                                <img src="/filter_selected.png" width="1000" height="774" alt="Users could adjust order period and lookback window to see how attribution changed—with smart defaults (30-day lookback, month-to-date) and inline helper text preventing confusion." />
+                                <Image src="/filter_selected.png" width={1000} height={774} alt="Users could adjust order period and lookback window to see how attribution changed—with smart defaults (30-day lookback, month-to-date) and inline helper text preventing confusion." />
                                 </Zoom>
                                 <p><b>Filtering</b>: The filtering system gave users control over their view while preventing cognitive overload. A 7-day lookback showed recent, tight attribution, a 30-day lookback captured longer consideration cycles. Users could experiment with different windows to understand how attribution timing affected their contribution numbers.</p>
                                 <p><b>Dual-audience view</b>: Rather than building two separate tools, one core visualization adapted based on user type. Publishers filtered by their own SIDs and saw "you" language. Advertisers filtered by campaign or publisher group and saw top contributors. Same data structure, different views, serving both audiences without doubling engineering effort.</p>
                             </div>
                             <div className="pb-16 text-base font-medium">
                                 <Zoom>
-                                    <img src="/brewComp.png" className="rounded-2xl" width="2390" height="1206" alt="Competitor research - Investigating the craft beer and design review landscape" />
+                                    <Image src="/brewComp.png" className="rounded-2xl" width={2390} height={1206} alt="Competitor research - Investigating the craft beer and design review landscape" />
                                 </Zoom>
                             </div>
                             <div className="max-w-full py-5">
@@ -158,7 +158,7 @@ function Prompt() {
                             <p className="text-base font-medium">The dual-audience challenge also taught me that the same underlying data can serve different user needs with thoughtful filtering and presentation. This applies to any consumer product with power users and casual users, designing flexibility without sacrificing simplicity.</p>
                             <p className="text-base font-medium">Finally, this project reinforced that trust comes from transparency, not simplification. Users were willing to engage with complexity when the logic was clearly explained. This transparency builds confidence in the data and insights being shown.</p>
                             <Zoom>
-                                <Image src="/brewtifulIA.png" className="rounded-2xl" layout="intrinsic" width="1392" height="622" alt="My inital decision for the IA of the new site. Kept a fairly flat IA." />
+                                <Image src="/brewtifulIA.png" className="rounded-2xl" width={1392} height={622} alt="My inital decision for the IA of the new site. Kept a fairly flat IA." />
                             </Zoom>
                             <br /><br /><br />
                             <Link href="/" className="self-start">

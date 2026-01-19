@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import React from "react"
 import Zoom from "react-medium-image-zoom"
 import 'react-medium-image-zoom/dist/styles.css'
@@ -19,7 +19,7 @@ function Prompt() {
                     <div className="mx-auto flex h-full max-w-screen-md flex-row flex-wrap place-content-center content-center">
                         <div className="flex flex-col">
                             <Zoom>
-                                <img src="/brewtifulBg.png" width="1600" height="927" alt="Small mock of end product" />
+                                <Image src="/brewtifulBg.png" width={1600} height={927} alt="Small mock of end product" />
                             </Zoom>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ function Prompt() {
                             </ul>
                             <div className="mb-16">
                                 <Zoom>
-                                    <img src="/old.png" className="rounded-md" width="500" height="542" alt="I had previously begun exploring ways of documenting beers I had sampled" />
+                                    <Image src="/old.png" className="rounded-md" width={500} height={542} alt="I had previously begun exploring ways of documenting beers I had sampled" />
                                 </Zoom>
                             </div>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Approach</h2>
@@ -74,10 +74,10 @@ function Prompt() {
                                 The final solution combined natural language prompts, structured tags, and suggested queries to give users both speed and control. Every search generated report remained fully editable, could be saved as a template, or rebuilt from scratch, this preserved the manual workflow for users who preferred it.                            </p>
                             <div className="mb-16 text-base font-medium">
                                 <Zoom>
-                                    <img src="/tags.png" className="rounded-md" width="2390" height="1206" alt="Competitor research - Investigating the craft beer and design review landscape" />
+                                    <Image src="/tags.png" className="rounded-md" width={2390} height={1206} alt="Competitor research - Investigating the craft beer and design review landscape" />
                                 </Zoom>
                                 <Zoom>
-                                    <img src="/old.png" className="rounded-md" width="2390" height="1206" alt="Competitor research - Investigating the craft beer and design review landscape" />
+                                    <Image src="/old.png" className="rounded-md" width={2390} height={1206} alt="Competitor research - Investigating the craft beer and design review landscape" />
                                 </Zoom>
                             </div>
                             <div className="max-w-full">

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Zoom from "react-medium-image-zoom"
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -18,8 +18,8 @@ function CaseStudy() {
             <div className="mt-4">
                 <div className="container relative mx-auto h-[70vh] max-w-screen-xl rounded-2xl bg-[url('/dfbg.png')] bg-cover">
                     <div className="mx-auto flex h-fit flex-row flex-wrap place-content-center content-center">
-                        <div className="flex flex-col">
-                                <Image src="/tools.png" layout="fill" alt="Small mock of end product" className="object-cover" />
+                        <div className="relative flex flex-col">
+                                <Image src="/tools.png" fill alt="Small mock of end product" className="object-cover" />
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ function CaseStudy() {
                             <div className="col-span-4 mt-16 py-10 text-gray-700">
                                 <center>
                                 <Zoom>
-                                    <img src="/designflows.png" width="197" height="107" alt="Designflows 2021 logo" />
+                                    <Image src="/designflows.png" width={197} height={107} alt="Designflows 2021 logo" />
                                 </Zoom>
                                 </center>
                                 <h2 className="pt-16 text-xl font-semibold tracking-tight text-gray-700">Overview</h2>
@@ -72,14 +72,14 @@ function CaseStudy() {
                             <p className="mb-16">Once happy I understood what was being asked for I began making a to do list. This would help me work methodically and would make sure I covered everything required of me during this weekend.</p>
                             
                             <Zoom>
-                                <img src="/poa.png" width="944" height="944" alt="It was important for me to make a to do list to help ensure I stayed on track." />
+                                <Image src="/poa.png" width={944} height={944} alt="It was important for me to make a to do list to help ensure I stayed on track." />
                             </Zoom>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Competitor research</h2>
                             <p>Due to the time constraints I had to take a slightly different approach to what I am used to. The research phase is the most important part of the project, it helps ensure that my understanding is as good as it can be.</p>
                             <p>I decided the best approach to the research phase of this particular project would be to look at what could be considered a competitor businesses. I begun by looking at large DIY style companies, IKEA, B&amp;Q etc. I then considered businesses that primarily offer a hire service, for example Uber. I then went even further and looked at companies that offered collection and delivery services such as Deliveroo. These companies and there apps helped me to build a better understanding of the current market, the common UI elements and where I may be able to make improvements.</p>
                             <div className="mt-8 rounded-md bg-white py-4">
                             <Zoom>
-                                <img src="/compResearch.png" width="2000" height="944" alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
+                                <Image src="/compResearch.png" width={2000} height={944} alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
                             </Zoom>
                             </div>
                             </div>
@@ -94,7 +94,7 @@ function CaseStudy() {
                             <p>I decided to spend some time inventing a brand identiy for this project. It meant I was able to create a simple pattern library that I could then deploy much quicker into the final design.</p>
                             <p className="mb-16">I mainly focused on the colour palette and typography. I settled on something that was fairly simple but offered a level of uniqueness.</p>
                             <Zoom>
-                                <img src="/brandID.png" width="2000" height="1040" alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
+                                <Image src="/brandID.png" width={2000} height={1040} alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
                             </Zoom>
                             </div>
                         </div>
@@ -111,14 +111,14 @@ function CaseStudy() {
                             <p className="mb-16">By Saturday evening I was confident that I had created a sketch that I could work with. I decided to take a break at this point until the next day.</p>
                             <div className="pb-16">
                                 <Zoom>
-                                    <img src="/sketch.png" width="1421" height="1000" className="rounded-2xl" alt="An example of sketches completed for the first screen of the app" />
+                                    <Image src="/sketch.png" width={1421} height={1000} className="rounded-2xl" alt="An example of sketches completed for the first screen of the app" />
                                 </Zoom>
                             </div>
                             <div className="max-w-full rounded-2xl bg-yellow-500 p-10">
                                 <h2 className="pb-2 text-xl font-semibold tracking-tight">Mockups</h2>
                                 <p className="pb-8">Sunday morning I decided to get an early start, I spent a large chunk of the day working on the hi-fidelity mock ups for the required screens. Even though I wasnt completing a full app I wanted to make sure that it could be added to in the future easily and still make sense.</p>
                                 <Zoom>
-                                    <img src="/appMocks.png" width="1365" height="879" alt="Preview of how the app mocks were looking" />
+                                    <Image src="/appMocks.png" width={1365} height={879} alt="Preview of how the app mocks were looking" />
                                 </Zoom>
                             </div>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">App icon</h2>
@@ -126,7 +126,7 @@ function CaseStudy() {
                             <p>The initial step here was to make sure I was working to correct dimensions. I then spent some time understanding what was needed to create an app icon that stands out.</p>
                             <p className="mb-16">I spent a lot of effort and made many iterations to icon. I ended up settling on a simple icon that used the colour palette from the app to ensure a consistant experience.</p>
                             <Zoom>
-                                <img src="/iconexploration.png" width="2000" height="646" alt="Examples of the many icon ideas I explored" />
+                                <Image src="/iconexploration.png" width={2000} height={646} alt="Examples of the many icon ideas I explored" />
                             </Zoom>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight">Icon Decision</h2>
                             <p className="mb-16">After running through many iterations of the icon I settled on this. The reason for my choice was as follows:<br /><br />
@@ -135,7 +135,7 @@ function CaseStudy() {
                                 &bull; <b>Simplicity</b> - This icon uses a minimal amount of colour and iconography which I feels gives a clean and simplistic icon.
                             </p>
                             <Zoom>
-                                <Image src="/appStoreMock.png" layout="intrinsic" width="1024" height="1757" alt="Final icon design" />
+                                <Image src="/appStoreMock.png" width={1024} height={1757} alt="Final icon design" />
                             </Zoom>
                             </div>
                     </div>
@@ -150,7 +150,7 @@ function CaseStudy() {
                             <p className="mb-16">The initial area I would have spent more time on would have been the research phase, I would have liked to have gained a better understanding of the competitor landscape. The addition of user interviews would have also assisted in the research and the end result. I also think I could of come up with a more refined color palette and framework for the project, but this may of been a stretch to achieve given the time constraint.</p>
                             <div className="overflow-hidden rounded-3xl">
                             <Zoom>
-                                <img src="/dfFinal.png" width="1403" height="931" className="rounded-2xl" alt="Designflows final submission 2021" />
+                                <Image src="/dfFinal.png" width={1403} height={931} className="rounded-2xl" alt="Designflows final submission 2021" />
                             </Zoom>
                             </div>
                             <h2 className="pt-16 text-xl font-semibold tracking-tight text-gray-700">Final thoughts</h2>
