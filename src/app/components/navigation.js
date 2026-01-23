@@ -80,8 +80,8 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="z-50">
-        <div className="container mx-auto max-w-screen-xl px-6 py-12 md:px-0">
+      <nav className="z-50 bg-transparent">
+        <div className="container mx-auto max-w-6xl px-6 py-12">
           <div className="flex items-center justify-between">
             <Link
               href="/"

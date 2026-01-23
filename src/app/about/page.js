@@ -1,32 +1,30 @@
 import Image from "next/image"
+import { DraggableImageGallery } from "../components/draggable-image-gallery"
 
-export const metadata = {
-  title: "About | Tom Spencer",
-  description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
-}
+export async function generateMetadata() {
+    return {
+      title: "About | Tom Spencer",
+      description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
+      }
+  }
 
 export default function About() {
     return (
+        <>
         <div className="mt-4">           
-            <div className="container mx-auto max-w-screen-md px-6 py-10">
-                {/* Header Section */}
-                <div className="mb-16 md:mb-24">                    
+            <div className="container mx-auto max-w-6xl px-6">
+                <div className="rounded-4xl bg-white p-12">
+                    {/* Header Section */}
+                    <div className="mb-16 md:mb-24">
+                    <div className="mb-6 text-sm font-medium uppercase tracking-wider text-purple-500">Hi, I'm Tom —</div>
                     <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-12">
                         <div className="order-last md:order-first md:col-span-8">
                             <div className="flex h-full flex-col justify-center">
-                                <h1 className="mb-4 text-3xl font-semibold leading-tight tracking-tight text-slate-950 md:text-4xl">Hi, I'm Tom —</h1>
+                                <h1 className="mb-4 text-3xl font-semibold leading-tight tracking-tight text-slate-950 md:text-4xl">About Me</h1>
                             </div>
                         </div>
                         <div className="md:col-span-4">
-                            <div className="overflow-hidden rounded-2xl">
-                                <Image 
-                                    src="/bio.png" 
-                                    alt="You will often find me out hiking in the South Downs National Park" 
-                                    className="w-full rounded-2xl" 
-                                    width={500} 
-                                    height={500}
-                                />
-                            </div>
+                            <DraggableImageGallery />
                         </div>
                     </div>
                 </div>
@@ -61,7 +59,9 @@ export default function About() {
                         </a>
                     </p>
                 </div>
+                </div>
             </div>
         </div>
+        </>
     )
-}
+  }
