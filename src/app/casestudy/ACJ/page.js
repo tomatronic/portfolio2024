@@ -1,12 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
 import React from "react"
-import Zoom from "react-medium-image-zoom"
 import 'react-medium-image-zoom/dist/styles.css'
 
 export async function generateMetadata() {
     return {
-        title: "Prompt | Tom Spencer",
+        title: "Affiliate Conversion Journey | Tom Spencer",
         description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
     }
 }
@@ -17,29 +16,26 @@ function Prompt() {
             <div className="fixed inset-0 -z-10 bg-purple-100"></div>
             <div className="relative min-h-screen">
                 <div className="container mx-auto max-w-6xl px-6">
-                    <div className="rounded-4xl bg-white p-12">
+                    <div className="rounded-4xl bg-zinc-50 p-12">
+                    <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 rounded-2xl mb-10">                             
+                            <Image src="/ACJ-hero.png" width={1600} height={927} alt="Small mock of end product" />                            
+                        </div>
                         <div className="mb-10 grid grid-cols-1 gap-15 md:grid-cols-4">
                             <div className="md:col-span-2">
                                 <p className="text-sm font-semibold text-gray-600">Rakuten Advertising &bull; Jan 2025 - Ongoing</p>
                                 <h1>Affiliate Conversion Journey — Multi-Touch Attribution for Affiliate</h1>
                             </div>
                             <div className="md:col-span-2">
-                                <p className="text-base font-medium">Publishers and Advertisers on Rakuten's affiliate network wanted to understand their true contribution to sales, not just last-click attribution. When a customer discovers a product through publisher A's blog, researches it via publisher B's review site, then purchases after clicking publisher C's discount link, <b>who deserves credit?</b></p>
-                                <p className="text-base font-medium">Without this visibility, publishers couldn't prove their value in the awareness and consideration phases, and advertisers couldn't optimize their partner mix. Competitors (think CJ Affiliate and Impact) offered journey tracking, putting Rakuten Advertising at a strategic disadvantage. Rakuten Advertising needed to build a full-funnel attribution tool that showed multi-touch journeys across awareness, consideration, and conversion phases.</p>
+                                <p className="text-base font-medium">Users on Rakuten's affiliate network wanted to understand their true contribution to sales, not just last-click attribution. When a customer discovers a product through publisher A's blog, researches it via publisher B's review site, then purchases after clicking publisher C's discount link, <b>who deserves credit?</b></p>
+                                <p className="text-base font-medium">Without this visibility, publishers couldn't prove their value, and advertisers couldn't optimise their partner mix. Competitors (think CJ Affiliate and Impact) offered journey tracking, putting Rakuten Advertising at a strategic disadvantage. Rakuten Advertising needed to build a full-funnel attribution tool that showed multi-touch journeys across different phases.</p>
                                 
                                 <div className="text-gray-600 space-y-1">
-                                    <p className="!text-sm"><span className="font-normal">Role:</span> <span className="font-semibold">Sole UX designer</span></p>
-                                    <p className="!text-sm"><span className="font-normal">Skills:</span> <span className="font-semibold">UX/UI, User Research, Prototyping, User testing</span></p>
+                                    <p className="text-sm"><span className="font-normal">Role:</span> <span className="font-semibold">Sole UX designer</span></p>
+                                    <p className="text-sm"><span className="font-normal">Skills:</span> <span className="font-semibold">UX/UI, User Research, Prototyping, User testing</span></p>
                                 </div>
                             </div>
                         </div>
-                        <div className="mx-auto flex h-full max-w-screen-md flex-row flex-wrap place-content-center content-center">
-                            <div className="flex flex-col">
-                                <Zoom>
-                                    <Image src="/brewtifulBg.png" width={1600} height={927} alt="Small mock of end product" />
-                                </Zoom>
-                            </div>
-                        </div>
+                        
                         <div className="grid auto-rows-auto grid-cols-1 gap-5 md:grid-cols-4 md:gap-10">
                             <div className="col-span-4 pb-10">
                                 <h2 className="text-xl font-semibold tracking-tight">Challenge</h2>
@@ -50,17 +46,14 @@ function Prompt() {
                                     <li><b>Variable timeframes</b>: Users needed the ability to adjust lookback windows (1 - 30 days) and see how attribution changed, this meant the same journey could be seen differently depending on the filters chosen. How do we allow flexibility while ensuring the data is trustworthy?</li>
                                     <li><b>Edge cases</b>: How do you handle overlapping purchases by the same customer? Missing tracking data? Single-click conversions? Complex counting logic where one click could be attributed to multiple orders?</li>
                                     <li><b>Trust</b>: Users needed to trust the data enough to make budget decisions, which meant explaining the complex attribution logic without overwhelming them.</li>
-                                </ul>
-                                <Zoom>
-                                    <Image src="/sampleBeer.png" className="rounded-2xl" width={500} height={542} alt="I had previously begun exploring ways of documenting beers I had sampled" />
-                                </Zoom>
+                                </ul>                                
                                 <h2 className="pt-16 text-xl font-semibold tracking-tight">Approach</h2>
                                 <p className="text-base font-medium">I started by analysing our competitors (CJ affiliate and Impact) and also other top tier companies (Google analytics and mixpanel) providing journey visualisation. I noted what worked (clear aggregation, progressive disclosure) and what failed (showing too much at once, no actionable guidance).</p>
                                 <p className="text-base font-medium">Through interviews with both internal (8 account managers) and external users, I learned:</p>
-                                <ul className="space-y-3">
+                                <ul className="space-y-3 text-base font-medium pb-4">
                                     <li>Publishers didn't want to see <i>every</i> journey, they wanted to see their contribution patterns and understand what this meant.</li>
                                     <li>Advertisers wanted to identify "Which publishers work well together?" not just "Who gets last-click?"</li>
-                                    <li>Both groups needed the data explained, not just displayed</li>
+                                    <li>Both groups needed the data explained, not just displayed.</li>
                                 </ul>
                                 <p className="text-base font-medium"><b>The key insight</b>: Users wanted answers to specific questions, with the ability to dig deeper when needed. This shaped my entire approach: start with answers, allow exploration.</p>
                                 <h3 className="pt-6 text-lg font-semibold tracking-tight">Key design decisions</h3>
@@ -99,26 +92,21 @@ function Prompt() {
                                 <h2 className="pt-16 text-xl font-semibold tracking-tight">Solution</h2>
                                 <p className="text-base font-medium">The final solution used progressive disclosure to help guide users from high level insights to more detailed exploration. A three phased framework helped make attribution data much more digestible.</p>
                                 <div className="space-y-6 text-base font-medium">
-                                    <Zoom>
-                                        <Image src="/activitySummary.png" width={1000} height={774} alt="Users first see an activity summary with total clicks across phases, average clicks to conversion, and their baseline contribution footprint—providing context before diving into detailed journeys." />
-                                    </Zoom>
+                                    
+                                        <Image src="/ACJ-activity-summary.png" width={1000} height={774} alt="Users first see an activity summary with total clicks across phases, average clicks to conversion, and their baseline contribution footprint—providing context before diving into detailed journeys." />
+                                    
                                     <p><b>Activity summary</b>: Raw data can be daunting, by presenting key metrics that quickly answer questions like "How am I performing across the funnel" we help a user quickly understand how their account is doing.</p>
-                                    <Zoom>
-                                        <Image src="/contributions.png" width={1000} height={774} alt="The Contributions tab breaks down publisher involvement across awareness, consideration, and conversion phases—giving users clear language to discuss their value beyond last-click attribution." />
-                                    </Zoom>
+                                    
+                                        <Image src="/ACJ-contributions.png" width={1000} height={774} alt="The Contributions tab breaks down publisher involvement across awareness, consideration, and conversion phases—giving users clear language to discuss their value beyond last-click attribution." />
+                                    
                                     <p><b>Contributions tab</b>: The three-phase framework (Awareness → Consideration → Conversion) transformed abstract click sequences into a clear narrative. Publishers could now say "I drive 40% of awareness conversions" instead of struggling to explain their role. Advertisers could identify which publishers were performing well at different stages of the journey.</p>
                                     <p><b>Touchpoints tab</b>: Our users could explore journeys in more detail, really understanding which touchpoint sequences benefitted them most.</p>
-                                    <Zoom>
-                                        <Image src="/filter_selected.png" width={1000} height={774} alt="Users could adjust order period and lookback window to see how attribution changed—with smart defaults (30-day lookback, month-to-date) and inline helper text preventing confusion." />
-                                    </Zoom>
+                                    
+                                        <Image src="/ACJ-filter-selected.png" width={1000} height={774} alt="Users could adjust order period and lookback window to see how attribution changed—with smart defaults (30-day lookback, month-to-date) and inline helper text preventing confusion." />
+                                    
                                     <p><b>Filtering</b>: The filtering system gave users control over their view while preventing cognitive overload. A 7-day lookback showed recent, tight attribution, a 30-day lookback captured longer consideration cycles. Users could experiment with different windows to understand how attribution timing affected their contribution numbers.</p>
                                     <p><b>Dual-audience view</b>: Rather than building two separate tools, one core visualization adapted based on user type. Publishers filtered by their own SIDs and saw "you" language. Advertisers filtered by campaign or publisher group and saw top contributors. Same data structure, different views, serving both audiences without doubling engineering effort.</p>
-                                </div>
-                                <div className="pb-16 text-base font-medium">
-                                    <Zoom>
-                                        <Image src="/brewComp.png" className="rounded-2xl" width={2390} height={1206} alt="Competitor research - Investigating the craft beer and design review landscape" />
-                                    </Zoom>
-                                </div>
+                                </div>                                
                                 <div className="max-w-full py-5">
                                     <h2 className="text-xl font-semibold tracking-tight text-gray-700">Outcome</h2>
                                     <div className="space-y-4 text-base font-medium text-gray-700">
@@ -154,9 +142,6 @@ function Prompt() {
                                 <p className="text-base font-medium">Complex data visualization isn't about showing everything, it's about progressive disclosure and guiding users from high-level insights to detailed narrative.</p>
                                 <p className="text-base font-medium">The dual-audience challenge also taught me that the same underlying data can serve different user needs with thoughtful filtering and presentation. This applies to any consumer product with power users and casual users, designing flexibility without sacrificing simplicity.</p>
                                 <p className="text-base font-medium">Finally, this project reinforced that trust comes from transparency, not simplification. Users were willing to engage with complexity when the logic was clearly explained. This transparency builds confidence in the data and insights being shown.</p>
-                                <Zoom>
-                                    <Image src="/brewtifulIA.png" className="rounded-2xl" width={1392} height={622} alt="My inital decision for the IA of the new site. Kept a fairly flat IA." />
-                                </Zoom>
                                 <br /><br /><br />
                                 <Link href="/" className="self-start">
                                     <button className="rounded-xl border border-gray-400 bg-white/95 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/75 hover:shadow-lg" type="button">

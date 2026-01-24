@@ -31,9 +31,19 @@ export default function About() {
 
                 {/* Main Content */}
                 <div className="mb-16 space-y-6 text-base leading-8 text-slate-700 md:text-lg md:leading-9">
-                    <p>I'm a Senior UX Designer based in Brighton, UK. I thrive on solving complex problems and crafting experiences that feel natural and engaging. My work is all about making products enjoyable, accessible, and beautifully intuitive.</p>
-                    <p>Currently, I'm at Rakuten Advertising, where I dive deep into user behavior, ensuring that every design decision is rooted in empathy and understanding. I love experimenting with ideas and solutions to create products that not only work but make users feel right at home.</p>
-                    <p>When I'm not designing, you'll find me recharging in nature or exploring new places with my partner, always drawing inspiration from the world around me.</p>
+                    <p>I'm a Senior UX Designer based in Brighton, specializing in products where data clarity drives decisions with analytics and performance tracking. For the past 8 years at Rakuten Advertising, I've designed dashboards, built intelligent search systems, and created attribution tools that help people make sense of overwhelming information.</p>
+                </div>
+                <h2 className="text-xl font-semibold tracking-tight">What I am good at</h2>
+                <div className="mb-16 space-y-6 text-base leading-8 text-slate-700 md:text-lg md:leading-9">
+                <ul className="space-y-3 text-base leading-8 text-slate-700 md:text-lg md:leading-9">
+                    <li>Making data-heavy interfaces feel effortless (not just "accessible"—actually enjoyable)</li>
+                    <li>Shipping fast without sacrificing craft (5-day prototypes, 3-month MVPs)</li>
+                    <li>Balancing automation with user control (users want help, not replacement)</li>
+</ul>
+                </div>
+                <h2 className="text-xl font-semibold tracking-tight">Outside work</h2>
+                <div className="mb-16 space-y-6 text-base leading-8 text-slate-700 md:text-lg md:leading-9">
+                <p>I recharge in nature, whether that is taking it slow nad steady or running. Or you can find me planning the next adventure with my partner. The best design ideas come when I'm not staring at a screen.</p>
                 </div>
 
                 {/* Banner Image */}
@@ -65,3 +75,6 @@ export default function About() {
         </>
     )
   }
+
+
+/* 📧 [Email] | 💼 [LinkedIn] | 📄 [Resume] */

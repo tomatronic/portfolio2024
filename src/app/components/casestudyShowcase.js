@@ -5,7 +5,7 @@ function CasestudyShowcase() {
   return (
     <div id="work">
       <div className="py-24">
-        <div className="container mx-auto max-w-screen-xl px-4">
+        <div className="container mx-auto max-w-6xl px-4">
           <div className="space-y-16">
           {/* <div className="grid grid-cols-1 gap-8 rounded-2xl bg-purple-100 md:grid-cols-2 md:gap-10">
               <div className="grid-col-1 relative grid content-center overflow-visible md:order-last md:pl-10">
