@@ -92,19 +92,22 @@ function Prompt() {
                                 <h2 className="pt-16 text-xl font-semibold tracking-tight">Solution</h2>
                                 <p className="text-base font-medium">The final solution used progressive disclosure to help guide users from high level insights to more detailed exploration. A three phased framework helped make attribution data much more digestible.</p>
                                 <div className="space-y-6 text-base font-medium">
-                                    
+                                <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 rounded-2xl mb-10"> 
                                         <Image src="/ACJ-activity-summary.png" width={1000} height={774} alt="Users first see an activity summary with total clicks across phases, average clicks to conversion, and their baseline contribution footprint—providing context before diving into detailed journeys." />
-                                    
+                                    </div>
                                     <p><b>Activity summary</b>: Raw data can be daunting, by presenting key metrics that quickly answer questions like "How am I performing across the funnel" we help a user quickly understand how their account is doing.</p>
-                                    
+                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 rounded-2xl mb-10"> 
                                         <Image src="/ACJ-contributions.png" width={1000} height={774} alt="The Contributions tab breaks down publisher involvement across awareness, consideration, and conversion phases—giving users clear language to discuss their value beyond last-click attribution." />
-                                    
+                                    </div>
                                     <p><b>Contributions tab</b>: The three-phase framework (Awareness → Consideration → Conversion) transformed abstract click sequences into a clear narrative. Publishers could now say "I drive 40% of awareness conversions" instead of struggling to explain their role. Advertisers could identify which publishers were performing well at different stages of the journey.</p>
                                     <p><b>Touchpoints tab</b>: Our users could explore journeys in more detail, really understanding which touchpoint sequences benefitted them most.</p>
-                                    
+                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 rounded-2xl mb-10"> 
                                         <Image src="/ACJ-filter-selected.png" width={1000} height={774} alt="Users could adjust order period and lookback window to see how attribution changed—with smart defaults (30-day lookback, month-to-date) and inline helper text preventing confusion." />
-                                    
+                                    </div>
                                     <p><b>Filtering</b>: The filtering system gave users control over their view while preventing cognitive overload. A 7-day lookback showed recent, tight attribution, a 30-day lookback captured longer consideration cycles. Users could experiment with different windows to understand how attribution timing affected their contribution numbers.</p>
+                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 rounded-2xl mb-10">                             
+                            <Image src="/ACJ-comparison.png" width={1600} height={927} alt="Small mock of end product" />                            
+                        </div>
                                     <p><b>Dual-audience view</b>: Rather than building two separate tools, one core visualization adapted based on user type. Publishers filtered by their own SIDs and saw "you" language. Advertisers filtered by campaign or publisher group and saw top contributors. Same data structure, different views, serving both audiences without doubling engineering effort.</p>
                                 </div>                                
                                 <div className="max-w-full py-5">

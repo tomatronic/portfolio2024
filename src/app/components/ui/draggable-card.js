@@ -16,8 +16,9 @@ export function DraggableCardBody({ children, className = "" }) {
     <motion.div
       className={className}
       drag
+      dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }}
       dragMomentum={false}
-      whileDrag={{ scale: 1.05, zIndex: 50 }}
+      whileDrag={{ scale: 1.1, zIndex: 50, rotate: 0, cursor: 'grabbing' }}
       dragElastic={0.1}
       style={{ cursor: 'grab' }}
       whileHover={{ scale: 1.02 }}
