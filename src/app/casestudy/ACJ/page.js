@@ -23,11 +23,11 @@ function Prompt() {
                         <div className="mb-10 grid grid-cols-1 gap-15 md:grid-cols-4">
                             <div className="md:col-span-2">
                                 <p className="text-sm font-semibold text-gray-600">Rakuten Advertising &bull; Jan 2025 - Ongoing</p>
-                                <h1>Affiliate Conversion Journey — Multi-Touch Attribution for Affiliate</h1>
+                                <h1><span className="text-gray-600 ">Affiliate Conversion Journey</span> — Multi-Touch Attribution for Affiliate</h1>
                             </div>
                             <div className="md:col-span-2">
-                                <p className="text-base font-medium">Users on Rakuten's affiliate network wanted to understand their true contribution to sales, not just last-click attribution. When a customer discovers a product through publisher A's blog, researches it via publisher B's review site, then purchases after clicking publisher C's discount link, <b>who deserves credit?</b></p>
-                                <p className="text-base font-medium">Without this visibility, publishers couldn't prove their value, and advertisers couldn't optimise their partner mix. Competitors (think CJ Affiliate and Impact) offered journey tracking, putting Rakuten Advertising at a strategic disadvantage. Rakuten Advertising needed to build a full-funnel attribution tool that showed multi-touch journeys across different phases.</p>
+                                <p className="text-base font-medium">Rakuten Advertising supports multi-touch attribution across complex affiliate journeys. However, publishers and advertisers struggled to interpret that data in a way that meaningfully informed <b>budgeting, partner strategy, and performance conversations.</b></p>
+                                <p className="text-base font-medium">Multi-touch data existed — but it wasn’t helping users answer the questions they actually cared about.</p>
                                 
                                 <div className="text-gray-600 space-y-1">
                                     <p className="text-sm"><span className="font-normal">Role:</span> <span className="font-semibold">Sole UX designer</span></p>

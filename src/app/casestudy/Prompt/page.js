@@ -19,7 +19,7 @@ function Prompt() {
                 <div className="container mx-auto max-w-6xl px-6">
                     <div className="rounded-4xl bg-zinc-50 p-12">
                         <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 rounded-2xl mb-10">
-                            <Image src="/ACJmain.png" width={1600} height={927} alt="Small mock of end product" />
+                            <Image src="/Prompt-hero.png" width={1600} height={927} alt="Small mock of end product" />
                         </div>
                         <div className="mb-10 grid grid-cols-1 gap-15 md:grid-cols-4">
                             <div className="md:col-span-2">
@@ -42,17 +42,17 @@ function Prompt() {
                                     Natural language search features sound simple until you design one. The challenge wasn't just "add a text box", it was building trust in automation while preserving user control in an area where data accuracy is crucial. Users want to make decisions based on these reports, meaning any search generated content needs to be verifiable and editable.                      <br />
                                     I needed to solve for:
                                 </p>
-                                <ul className="space-y-3">
+                                <ul className="space-y-3 mb-10">
                                     <li><b>Trust</b>: How will a user know that the search results accurately match the query, without expecting them to check against up to 170+ metrics?</li>
                                     <li><b>Ambiguity</b>: How do we handle queries that are vague and could mean one of the many data points available?</li>
                                     <li><b>Control vs. speed</b>: Power users want a quick way of performing time consuming tasks, new users want guidance, how can we offer both?</li>
                                     <li><b>Technical constraints</b>: The query parser struggled with specific metric names that can be bespoke to Rakuten Advertising, or even the user’s account, this required careful design around these considerations.</li>
                                     <li><b>Fallback</b>: Some users prefer manual control over search based automation. How can we ensure this option is still available to them?</li>
                                 </ul>
-                                <div className="flex flex-row flex-wrap place-content-center content-center rounded-2xl my-10">                             
-                                    <Image src="/old.png" width={1920} height={1142} alt="Small mock of end product" />                            
+                                <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 rounded-2xl mb-10">                     
+                                    <Image src="/Prompt-old2.png" width={1920} height={1142} alt="Small mock of end product" />                            
                                 </div>                                
-                                <h2 className="pt-16 text-xl font-semibold tracking-tight">Approach</h2>
+                                <h2 className=" text-xl font-semibold tracking-tight">Approach</h2>
                                 <p className="mb-6 text-base font-medium">I started by analyzing existing reports to understand common patterns: What metrics did users combine? What date ranges mattered? What questions were they trying to answer? This informed the natural language query design. Instead of just free-form text, I included suggested questions to help a user get started and understand the mechanics of the input box. We also included a 'tag' system in a later iteration to help users find and include certain data points that were harder to remember.</p>
                                 <h3 className="pt-6 text-lg font-semibold tracking-tight">Key decisions</h3>
                                 <ul className="mb-6 space-y-3 text-base font-medium">
