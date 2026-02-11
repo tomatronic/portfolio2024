@@ -35,7 +35,7 @@ export default function About() {
                                         </div>
                                         <h2 className="text-xl font-semibold tracking-tight">Outside work</h2>
                                         <div className="mb-16 space-y-6 text-base leading-8 text-slate-700 md:text-lg md:leading-9">
-                                            <p>I recharge in nature, whether that is taking it slow nad steady or running. Or you can find me planning the next adventure with my partner. The best design ideas come when I'm not staring at a screen.</p>
+                                            <p>I recharge in nature, whether that is taking it slow and steady or running. Or you can find me planning the next adventure with my partner. The best design ideas come when I'm not staring at a screen.</p>
                                         </div>
                                     </div>
                                 </div>
