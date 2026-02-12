@@ -29,7 +29,11 @@ function CasestudyShowcase() {
             <div className="grid h-full grid-cols-1 gap-8 rounded-2xl bg-purple-100 md:grid-cols-2 md:gap-10">
               <div className="relative overflow-hidden md:order-last md:overflow-visible md:pl-10">
                 <div className="flex h-[20rem] items-end md:absolute md:inset-0 md:h-full overflow-hidden">
-                  <Image src="/prompt-hero.png" alt="Reduced report creation time by 90% through intelligent search—balancing natural language queries with structured controls for 1,000+ advertisers." width={1200} height={800} className="h-full w-auto max-w-none" />
+                  <Image
+                    src="/Prompt-hero.png"
+                    alt="Reduced report creation time by 90% through intelligent search—balancing natural language queries with structured controls for 1,000+ advertisers."
+                    width={1200} height={800}
+                    className="h-full w-auto max-w-none" />
                 </div>
               </div>
               <div className="grid grid-cols-1 content-center gap-4 px-8 py-8 md:px-0 md:py-10 md:pl-10">
