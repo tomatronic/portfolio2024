@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
-
+/*
+  Typographic scale (use across site for consistency):
+  - Hero / page title:     h1, text-3xl md:text-4xl lg:text-5xl, font-semibold, tracking-tight
+  - Section headings:      h2, text-2xl md:text-3xl, font-semibold, tracking-tight, text-slate-950
+  - Card / project titles: text-2xl md:text-3xl, font-semibold, tracking-tight, text-slate-950
+  - Overline / label:      text-sm, font-medium, uppercase (e.g. "Rakuten Advertising")
+  - Body:                  text-base, leading-7; font-normal (muted) or font-medium (default)
+  - Body muted:            text-slate-600 dark:text-slate-400
+  - Small / caption:       text-sm or text-xs
+*/
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -13,6 +22,7 @@ body {
   color: #020617;
   background: #fafafa;
   font-family: "Open Sans", sans-serif;
+  transition: background-color 250ms ease-out;
 }
 
 @layer utilities {
@@ -23,16 +33,15 @@ body {
 
 @layer base {
   h1 {
-    @apply text-3xl;
-    @apply font-semibold;
-    @apply tracking-tight;
-    @apply leading-snug;
+    @apply text-3xl font-semibold leading-snug tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl dark:text-white;
   }
 
   p {
-    @apply text-base;
-    @apply font-medium;
-    @apply leading-7;
+    @apply text-base font-medium leading-7;
     @apply mb-4;
   }
 

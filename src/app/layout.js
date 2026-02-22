@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navigation from './components/navigation';
 import Footer from "./components/footer";
+import PageBackground from './components/PageBackground';
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Open_Sans } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next"
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={openSans.className}>  
       <body>
+        <PageBackground />
         <Navigation />
         {children}
         <Footer />

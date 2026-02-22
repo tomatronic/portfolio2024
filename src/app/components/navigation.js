@@ -95,7 +95,7 @@ export default function Navigation() {
                 height={48}
                 className="rounded-full"
               /> */}
-              <span className="ml-4 text-lg font-bold uppercase tracking-wide">TOM SPENCER</span>
+              <span className="ml-4 text-lg font-bold tracking-tight">Tom Spencer</span>
             </Link>
 
             <button

@@ -36,16 +36,16 @@ function CasestudyShowcase() {
                     className="h-full w-auto max-w-none" />
                 </div>
               </div>
-              <div className="grid grid-cols-1 content-center gap-4 px-8 py-8 md:px-0 md:py-10 md:pl-10">
+              <div className="grid grid-cols-1 content-center gap-4 px-8 py-8 md:px-0 md:py-10 md:pl-10 md:pr-10">
                 <div>
                   <div className="text-sm font-medium uppercase text-purple-600">Rakuten Advertising</div>
-                  <h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-700">Natural Language Search & AI</h2>
+                  <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950 dark:text-white md:text-3xl">Natural Language Search & AI</h2>
                 </div>
-                <p className="text-base font-medium text-gray-700 dark:text-gray-400">
+                <p className="text-base font-medium leading-7 text-slate-700 dark:text-slate-400">
                   Reduced report creation time by 90% through intelligent, natural language queries with structured controls for 1,000+ advertisers.
                 </p>
-                <Link href="casestudy/Prompt" className="self-start">
-                  <button className="rounded-xl border border-gray-300 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg" type="button">
+                <Link href="casestudy/Prompt" className="mt-6 self-start">
+                  <button className="rounded-xl border border-slate-300 bg-white/65 px-8 py-4 text-base font-medium text-slate-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg dark:border-slate-600 dark:text-slate-300" type="button">
                     Read case study
                   </button>
                 </Link>
@@ -63,17 +63,17 @@ function CasestudyShowcase() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-1 content-center gap-4 px-8 py-8 md:px-0 md:py-10 md:pl-10">
+              <div className="grid grid-cols-1 content-center gap-4 px-8 py-8 md:px-0 md:py-10 md:pl-10 md:pr-10">
                 <div>
                   <div className="text-sm font-medium uppercase text-purple-600">Rakuten Advertising</div>
-                  <h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-700">Multi-Touch Attribution for Affiliate</h2>
+                  <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950 dark:text-white md:text-3xl">Multi-Touch Attribution for Affiliate</h2>
                 </div>
-                <p className="text-base font-medium text-gray-700 dark:text-gray-400">
-                  Publishers couldn't prove their early-funnel value. Multi-touch attribution would help prove there value.
+                <p className="text-base font-medium leading-7 text-slate-700 dark:text-slate-400">
+                  Publishers couldn't prove their early-funnel value. Multi-touch attribution would help prove their value.
                 </p>
-                <Link href="/casestudy/ACJ" className="self-start">
+                <Link href="/casestudy/ACJ" className="mt-6 self-start">
                   <button
-                    className="rounded-xl border border-gray-300 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg"
+                    className="rounded-xl border border-slate-300 bg-white/65 px-8 py-4 text-base font-medium text-slate-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg dark:border-slate-600 dark:text-slate-300"
                     type="button"
                   >
                     Read case study
@@ -82,8 +82,8 @@ function CasestudyShowcase() {
               </div>
             </div>
             <div className="grid h-full grid-cols-1 gap-8 rounded-2xl bg-purple-100 md:grid-cols-2 md:gap-10">
-              <div className="grid-col-1 relative grid content-center overflow-visible md:order-last md:pl-10">
-                <div className="grid-col-1 flex content-center justify-start overflow-hidden">
+              <div className="relative overflow-hidden md:order-last md:overflow-visible md:pl-10">
+                <div className="flex h-[20rem] items-center justify-start overflow-hidden md:absolute md:inset-0 md:h-full">
                   <Image
                     src="/offersThumb.png"
                     alt="Streamlining the offer management experience for Rakuten Advertising"
@@ -94,17 +94,17 @@ function CasestudyShowcase() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-1 content-center gap-4 px-8 py-8 md:px-0 md:py-10 md:pl-10">
+              <div className="grid grid-cols-1 content-center gap-4 px-8 py-8 md:px-0 md:py-10 md:pl-10 md:pr-10">
                 <div>
                   <div className="text-sm font-medium uppercase text-purple-600">Rakuten Advertising</div>
-                  <h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-700">Enhancing offer management</h2>
+                  <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950 dark:text-white md:text-3xl">Enhancing offer management</h2>
                 </div>
-                <p className="text-base font-medium text-gray-700 dark:text-gray-400">
+                <p className="text-base font-medium leading-7 text-slate-700 dark:text-slate-400">
                   Reimagining how users manage offers. I crafted a solution that simplifies workflows and elevates visibility.
                 </p>
-                <Link href="/casestudy/Rakuten" className="self-start">
+                <Link href="/casestudy/Rakuten" className="mt-6 self-start">
                   <button
-                    className="rounded-xl border border-gray-300 bg-white/65 px-8 py-4 text-base font-medium text-gray-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg"
+                    className="rounded-xl border border-slate-300 bg-white/65 px-8 py-4 text-base font-medium text-slate-600 shadow-md transition-all hover:bg-white/35 hover:shadow-lg dark:border-slate-600 dark:text-slate-300"
                     type="button"
                   >
                     Read case study

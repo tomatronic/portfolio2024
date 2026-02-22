@@ -31,20 +31,20 @@ export default function ExampleGallery() {
     ];
 
     return (
-        <div className="pt-16 md:pt-16">
+        <div className="py-24 md:pt-16">
             <div className="container mx-auto max-w-6xl">
-                <h1 className="text-center text-2xl font-extrabold leading-none tracking-tight text-slate-950 md:text-3xl xl:text-4xl">
+                <h2 className="mb-4 text-2xl font-semibold tracking-tight text-slate-950 dark:text-white md:text-3xl">
                     Extra Pixels
-                </h1>
-                <p className="mx-auto max-w-xl text-balance pb-16 pt-4 text-center text-base text-slate-950 dark:text-gray-400">
-                    Smaller projects and experiments.
-                </p>
-                
-                <div className="grid grid-cols-4 gap-4 px-4 pb-16">
+                </h2>
+                <p className="text-balance pb-6 pt-0 text-base font-normal text-slate-600 dark:text-slate-400">
+                    Work I do when nobody's watching. Personal projects, speculative ideas, and the occasional rabbit hole.
+                </p> 
+
+                <div className="grid grid-cols-4 gap-4 pb-16">
                     {images.map((image, index) => (
-                        <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
+                        <div key={index} className="relative aspect-square overflow-hidden rounded-2xl">
                             <Zoom>
-                                <Image 
+                                <Image
                                     src={image.src}
                                     alt={image.alt}
                                     fill

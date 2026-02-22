@@ -13,7 +13,6 @@ export async function generateMetadata() {
 function Prompt() {
     return (
         <>
-            <div className="fixed inset-0 -z-10 bg-purple-100"></div>
             <div className="relative min-h-screen">
                 <div className="container mx-auto max-w-6xl px-6">
                     <div className="rounded-4xl bg-zinc-50 p-12">
