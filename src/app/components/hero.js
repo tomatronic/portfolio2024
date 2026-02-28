@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import HeroAvatar from "./HeroAvatar"
+import Link from "next/link"
 
 // Add your avatar image paths here (e.g. from /public). Hover over the avatar to cycle through them.
 const AVATAR_IMAGES = [
@@ -16,7 +17,7 @@ export default function Hero() {
       whileInView={{y: 0, opacity: 1}}
       transition={{ ease: 'easeInOut', duration: 0.5 }}
       viewport={{ once: true }}
-      className="container relative z-10 mx-auto max-w-screen-lg px-4 py-16"
+      className="container relative z-10 mx-auto max-w-6xl px-4 py-16"
     >
       <div className="grid h-full grid-cols-1 content-center justify-center gap-6">
         {/* Small round avatar: hover to cycle through images (easter egg) */}
@@ -33,7 +34,7 @@ export default function Hero() {
           </h1>
         </div>
 
-        <div>
+        <div className="mx-auto max-w-md">
           <p className="text-center text-base font-normal leading-relaxed text-slate-600 dark:text-slate-400">
             {/* Currently simplifying the{' '}
             <a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer" className="font-medium text-slate-800 underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500 dark:text-slate-200 dark:decoration-slate-500 dark:hover:decoration-slate-400">
@@ -47,6 +48,8 @@ export default function Hero() {
         </div>
       </div>
     </motion.div>
+
+
   </div>
   )
 }

@@ -110,21 +110,21 @@ export default function Navigation() {
               <Link
                 href="/#work"
                 onClick={() => setHash('#work')}
-                className={`text-base ${isActive('/#work') ? 'text-sky-500' : 'text-slate-950 hover:text-sky-500'}`}
+                className={`text-base ${isActive('/#work') ? 'text-violet-600' : 'text-slate-950 hover:text-violet-600'}`}
               >
                 Work
               </Link>
 
               <Link
                 href="/about"
-                className={`text-base ${isActive('/about') ? 'text-sky-500' : 'text-slate-950 hover:text-sky-500'}`}
+                className={`text-base ${isActive('/about') ? 'text-violet-600' : 'text-slate-950 hover:text-violet-600'}`}
               >
                 About
               </Link>
 
               <a
                 href="/resume.pdf"
-                className="text-base text-slate-950 hover:text-sky-500"
+                className="text-base text-slate-950 hover:text-violet-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -139,12 +139,12 @@ export default function Navigation() {
       {isMenuOpen && (
         <div
           ref={menuRef}
-          className="fixed inset-0 z-50 bg-sky-500 md:hidden"
+          className="fixed inset-0 z-50 bg-slate-950 md:hidden"
         >
           <div className="container relative mx-auto h-full px-6 py-12">
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="absolute right-6 top-12 text-slate-950 md:hidden"
+              className="absolute right-6 top-12 text-white md:hidden"
             >
               Close
             </button>
@@ -152,34 +152,34 @@ export default function Navigation() {
             <div className="flex h-full flex-col items-center justify-center space-y-8">
               <Link
                 href="/#work"
-                className="group relative text-3xl font-bold text-slate-950"
+                className="group relative text-3xl font-bold text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span className="relative z-10">Work</span>
-                <span className={`absolute bottom-0 left-0 h-1 w-full bg-slate-950 ${isActive('/#work') ? '' : 'hidden'}`}></span>
-                <span className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-slate-950 transition-transform duration-300 ease-out group-hover:scale-x-100 ${isActive('/#work') ? 'hidden' : ''}`}></span>
+                <span className={`absolute bottom-0 left-0 h-1 w-full bg-white ${isActive('/#work') ? '' : 'hidden'}`}></span>
+                <span className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100 ${isActive('/#work') ? 'hidden' : ''}`}></span>
               </Link>
 
               <Link
                 href="/about"
-                className="group relative text-3xl font-bold text-slate-950"
+                className="group relative text-3xl font-bold text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span className="relative z-10">About</span>
-                <span className={`absolute bottom-0 left-0 h-1 w-full bg-slate-950 ${isActive('/about') ? '' : 'hidden'}`}></span>
-                <span className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-slate-950 transition-transform duration-300 ease-out group-hover:scale-x-100 ${isActive('/about') ? 'hidden' : ''}`}></span>
+                <span className={`absolute bottom-0 left-0 h-1 w-full bg-white ${isActive('/about') ? '' : 'hidden'}`}></span>
+                <span className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100 ${isActive('/about') ? 'hidden' : ''}`}></span>
               </Link>
 
               <a
                 href="/resume.pdf"
-                className="group relative text-3xl font-bold text-slate-950"
+                className="group relative text-3xl font-bold text-white"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span className="relative z-10">Resume</span>
-                <span className="absolute bottom-0 left-0 h-0.5 w-full bg-slate-950 hidden"></span>
-                <span className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-slate-950 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+                <span className="hidden absolute bottom-0 left-0 h-0.5 w-full bg-white"></span>
+                <span className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
               </a>
             </div>
           </div>
