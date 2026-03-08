@@ -42,7 +42,7 @@ function ACJ() {
                                     <li><b>Trust</b>: Users needed confidence to make budget decisions, which meant explaining the complex attribution logic without overwhelming them.</li>
                                 </ul>
                                 <h2 className="pt-10 text-xl tracking-tight mb-12">Approach</h2>
-                                <p>Through interviews with both internal account managers and external users, I learned taht users wanted answers to specific questions with the ability to dig deeper when needed, not open ended data exploration.</p>
+                                <p>Through interviews with both internal account managers and external users, I learned that users wanted answers to specific questions with the ability to dig deeper when needed, not open ended data exploration.</p>
 
                                 <p><b>Key insight</b>: Start with answers, allow exploration.</p>
                                 <h3 className="pt-10">Key design decisions</h3>
