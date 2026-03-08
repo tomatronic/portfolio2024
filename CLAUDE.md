@@ -80,7 +80,7 @@ Defined in `globals.css` `@layer utilities`. Applied to all filled violet button
 - Modal bg: `bg-violet-600/[0.12] dark:bg-violet-950/90 backdrop-blur-sm`
 
 ## Navigation
-- Left: `just_me.webp` circular avatar (spring hover: scale + rotate) + "Tom Spencer" in Fraunces `font-normal text-2xl` (inline style: `var(--font-fraunces)`)
+- Left: `just_me.webp` circular avatar + "Tom Spencer" in Fraunces `font-normal text-2xl` (inline style: `var(--font-fraunces)`). Hovering anywhere on the avatar or name triggers spring scale + rotate on the avatar via Framer Motion `whileHover="hovered"` on the wrapper and `variants` on the avatar.
 - Desktop links: Work, About, Resume pill (hover → violet-600 with white text)
 - Mobile: full-screen `bg-slate-950` overlay with Menu/X lucide icons
 
