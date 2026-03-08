@@ -66,7 +66,7 @@ export default function ExampleGallery() {
     <div className="py-24">
       <div className="container mx-auto max-w-6xl px-4">
 
-        <h2 className="mb-4 text-2xl font-semibold tracking-tight text-slate-950 dark:text-white md:text-3xl">
+        <h2 className="mb-4 text-2xl font-normal tracking-tight text-slate-950 dark:text-white md:text-3xl">
           Extra Pixels
         </h2>
         <p className="text-balance pb-6 pt-0 text-base font-normal text-slate-600 dark:text-slate-400">

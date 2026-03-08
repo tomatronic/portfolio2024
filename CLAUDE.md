@@ -18,14 +18,15 @@ Project root: `/Users/thomasspencer/Documents/Portfolio2.0/portfolio2.0/`
 ```
 src/app/
   layout.js                   — root layout: Navigation, Footer, ThemeProvider, PageBackground, FOUC script
-  page.js                     — production home page (Hero + CasestudyShowcase + AboutMeSection)
+  page.js                     — home page: Hero + CasestudyShowcase + AboutMeSection + ExampleGallery
   globals.css                 — Tailwind v4 config, dark mode variant, base styles, btn-violet-3d utility
   components/
     hero.js                   — hero: Fraunces headline + DM Sans subtext + violet CTA button (smooth scroll to #work)
     casestudyShowcase.js      — work cards: full-width 2-col, CardImageStack right, text left, "Read case study" link
-    navigation.js             — top nav: just_me.webp avatar, desktop links, Resume pill, mobile full-screen menu
+    navigation.js             — top nav: just_me.webp avatar + "Tom Spencer" in Fraunces text-2xl, desktop links, Resume pill, mobile full-screen menu
     PageBackground.js         — sets body bg from theme context only (no pathname logic)
-    AboutMeSection.js         — about card: bio photo + bio text + "More about me" text link (always visible)
+    AboutMeSection.js         — open editorial layout: large Fraunces headline + 2 body paragraphs + "More about me →" text link (no card, no image)
+    examples.js               — ExampleGallery: hover-expand 4-image grid ("Extra Pixels" section)
     CardImageStack.js         — fanned/spread image stack, shared by casestudyShowcase + OtherCaseStudies
     ThemeProvider.js          — context for dark/light theme; reads/writes localStorage
     ThemeToggle.js            — pill toggle (Sun/Moon icons) in footer
@@ -40,24 +41,19 @@ src/app/
   about/
   resume/
 public/
-  just_me.webp                — nav avatar
-  bio.jpeg                    — about section photo
+  just_me.webp                — nav avatar + favicon
+  bio.jpeg                    — about page photo
   resume.pdf
   prompt_1.png, prompt_2.png, prompt_3.png  — Prompt case study card images
   acj_1.png, acj_2.png, acj_3.png          — ACJ case study card images
 ```
 
-## Orphaned files (not used in production — safe to delete)
-- `src/app/components/achievement.js` — old widget, not imported anywhere
-- `src/app/components/wave.js` — waving hand component, not imported anywhere
-- `src/app/components/DialProvider.js` — dev-only DialKit panel, not imported anywhere
-- `src/app/components/examples.js` — ExampleGallery, disconnected from page.js
-
 ## Production home page
 - **Background**: `#fafafa` light / `#0a0a0a` dark (set by PageBackground.js on body, theme-only)
 - **Hero**: Centred Fraunces headline → DM Sans subtext (max-w-xl) → violet `btn-violet-3d` CTA ("Explore case studies", smooth scrolls to `#work`)
 - **Work cards**: Full-width 2-col, image stack right, text + "Read case study →" link left. Hover: subtle shadow. Square images with `ring-2 ring-white`.
-- **About**: `AboutMeSection` card — bio photo + bio text + permanent "More about me →" text link
+- **About**: Open editorial layout — large Fraunces headline, 2 body paragraphs, "More about me →" arrow link. No card, no photo.
+- **Extra Pixels**: 4-item hover-expand gallery (ExampleGallery from `examples.js`)
 - **Accent colour**: `violet-600` throughout (buttons, links, hover states)
 
 ## Button style — `btn-violet-3d`
@@ -84,7 +80,7 @@ Defined in `globals.css` `@layer utilities`. Applied to all filled violet button
 - Modal bg: `bg-violet-600/[0.12] dark:bg-violet-950/90 backdrop-blur-sm`
 
 ## Navigation
-- Logo: `just_me.webp` circular avatar (spring hover: scale + rotate)
+- Left: `just_me.webp` circular avatar (spring hover: scale + rotate) + "Tom Spencer" in Fraunces `font-normal text-2xl` (inline style: `var(--font-fraunces)`)
 - Desktop links: Work, About, Resume pill (hover → violet-600 with white text)
 - Mobile: full-screen `bg-slate-950` overlay with Menu/X lucide icons
 
@@ -97,7 +93,7 @@ Defined in `globals.css` `@layer utilities`. Applied to all filled violet button
 - Layout: title (Fraunces, text-base, font-normal) left — image stack right
 - Padding: `px-5 py-8`, image container `h-16 w-28 mr-6`
 - `replace` prop on Link prevents modal history stacking
-- Images: use real case study images (prompt_1-3, acj_1-3); Rakuten still uses placeholders
+- Images: use real case study images (prompt_1-3, acj_1-3); Rakuten still uses Unsplash placeholders
 
 ## Colour palette — Production
 | Role | Light | Dark |
@@ -111,23 +107,24 @@ Defined in `globals.css` `@layer utilities`. Applied to all filled violet button
 - `/casestudy/Prompt` — Natural Language Search & AI (2025)
 - `/casestudy/ACJ` — Multi-Touch Attribution for Affiliate (2024)
 - `/casestudy/Rakuten` — Enhancing Offer Management (2021)
-- `/casestudy/InfluencerCampaigns` — Influencer Campaigns (2025)
+- `/casestudy/InfluencerCampaigns` — Influencer Campaigns (2025) ⚠️ not linked from nav/home (WIP)
 - `/casestudy/Brewtiful` — Craft Beer & Design (2023)
 - `/casestudy/DesignFlows` — DIY Toolkit Rental App (2021)
 
-**Known issue in ACJ/page.js**: the component function is named `Prompt` (copy-paste error) — cosmetic only, does not affect runtime.
-**Known issue in InfluencerCampaigns/page.js**: contains `[IMAGE: ...]` placeholder text in `<p>` tags that will render visibly.
+**Known issue in InfluencerCampaigns/page.js**: contains `[IMAGE: ...]` placeholder text in `<p>` tags that will render visibly. Case study is not linked from home page so not visible to users.
 
 ## Typographic scale
 | Role | Font | Size | Weight | Color | Leading |
 |------|------|------|--------|-------|---------|
-| Page title (h1) | Fraunces | `text-3xl` → `text-5xl` | `font-normal` | `text-slate-950 dark:text-white` | `leading-tight` |
+| Page title (h1) | Fraunces | `text-3xl` → `text-5xl` | `font-semibold` (hero) / `font-normal` (case studies) | `text-slate-950 dark:text-white` | `leading-tight` |
 | Section heading (h2) | Fraunces | `text-2xl` → `text-3xl` | `font-normal` | `text-slate-950 dark:text-white` | `tracking-tight` |
 | Sub-heading (h3) | Fraunces | `text-xl` | `font-normal` | `text-slate-950 dark:text-white` | — |
 | Body / muted text | DM Sans | `text-base` | `font-normal` | `text-slate-600 dark:text-slate-400` | `leading-relaxed` |
 | Small / caption | DM Sans | `text-sm` or `text-xs` | — | — | — |
 
 **Rule**: All body/muted `<p>` text must use `text-base font-normal leading-relaxed text-slate-600 dark:text-slate-400`. Do NOT use `font-medium`, `font-semibold`, `text-slate-700`, `leading-7`, or `text-lg` for regular body copy.
+
+**Fraunces on non-heading elements**: apply via `style={{ fontFamily: 'var(--font-fraunces), Georgia, serif' }}` — there is no Tailwind utility class for it.
 
 ## Case study page spacing system
 - Main card padding: `p-8 md:p-12`
@@ -140,8 +137,9 @@ Defined in `globals.css` `@layer utilities`. Applied to all filled violet button
 - Section h3: `pt-10` (font-normal, size from globals)
 
 ## Important conventions
-- The `/draft` page is the sandbox. Never apply experimental changes to production files without explicit instruction.
 - Dark mode uses Tailwind v4 `@variant dark` — all `dark:` classes work via `.dark` class on `<html>`.
 - `CardImageStack.js` is a shared component — changes affect all card layouts.
 - `PageBackground.js` must NOT use pathname logic — causes purple flash when modal intercepts route.
 - Favicon: `icons: { icon: '/just_me.webp' }` in `generateMetadata()` in `layout.js`.
+- Image filenames in `/public` must be lowercase (e.g. `.png` not `.PNG`) — Vercel runs on Linux (case-sensitive).
+- `group-hover` animations require `group` class on the parent element — check this when adding arrow animations to links.

@@ -91,19 +91,22 @@ export default function Navigation() {
               className="flex items-center"
               aria-label="Tom Spencer — home"
             >
-              <motion.div
-                className="relative h-12 w-12 overflow-hidden rounded-full"
-                style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.12), 0 0 0 1.5px rgba(0,0,0,0.06)' }}
-                whileHover={{ scale: 1.08, rotate: 6 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-              >
-                <Image
-                  src="/just_me.webp"
-                  alt="Tom Spencer"
-                  layout="fill"
-                  className="object-cover object-top"
-                />
-              </motion.div>
+              <div className="flex items-center gap-3">
+                <motion.div
+                  className="relative h-12 w-12 overflow-hidden rounded-full"
+                  style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.12), 0 0 0 1.5px rgba(0,0,0,0.06)' }}
+                  whileHover={{ scale: 1.08, rotate: 6 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+                >
+                  <Image
+                    src="/just_me.webp"
+                    alt="Tom Spencer"
+                    layout="fill"
+                    className="object-cover object-top"
+                  />
+                </motion.div>
+                <span className="text-2xl font-normal tracking-tight text-slate-950 dark:text-white" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif' }}>Tom Spencer</span>
+              </div>
             </Link>
 
             <button

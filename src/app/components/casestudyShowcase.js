@@ -105,7 +105,7 @@ export default function CasestudyShowcase() {
       <div className="container mx-auto max-w-6xl px-4">
 
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-950 dark:text-white md:text-4xl">
+          <h2 className="text-3xl font-normal tracking-tight text-slate-950 dark:text-white md:text-4xl">
             Case studies
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base font-normal leading-relaxed text-slate-600 dark:text-slate-400">
