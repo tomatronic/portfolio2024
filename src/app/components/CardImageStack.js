@@ -35,7 +35,7 @@ export default function CardImageStack({ images, isHovered, params }) {
           style={{ zIndex: Z_ORDERS[i], width: `${params.imageSize}%` }}
         >
           <motion.div
-            className="overflow-hidden rounded-xl shadow-md"
+            className="overflow-hidden rounded-xl shadow-md ring-2 ring-white"
             animate={{
               x:      isHovered ? hoverX[i]      : restX[i],
               y:      0,

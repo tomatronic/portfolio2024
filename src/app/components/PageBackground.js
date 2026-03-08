@@ -1,18 +1,19 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
+import { useTheme } from './ThemeProvider';
 import { useEffect } from 'react';
 
-const OFF_WHITE = '#fafafa';
-const PURPLE_100 = '#f3e8ff'; // Tailwind purple-100
+const COLORS = {
+  light: '#fafafa',
+  dark:  '#0a0a0a',
+}
 
 export default function PageBackground() {
-  const pathname = usePathname();
+  const { theme } = useTheme();
 
   useEffect(() => {
-    const isCaseStudy = pathname?.startsWith('/casestudy');
-    document.body.style.backgroundColor = isCaseStudy ? PURPLE_100 : OFF_WHITE;
-  }, [pathname]);
+    document.body.style.backgroundColor = theme === 'dark' ? COLORS.dark : COLORS.light;
+  }, [theme]);
 
   return null;
 }

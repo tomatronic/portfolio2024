@@ -40,7 +40,7 @@ export default function About() {
                                 <div className="overflow-hidden rounded-2xl">
                                     <Image
                                         src="/bio.png"
-                                        alt="A little insight to my life"
+                                        alt="Tom Spencer"
                                         width={400}
                                         height={500}
                                         className="h-auto w-full object-cover"

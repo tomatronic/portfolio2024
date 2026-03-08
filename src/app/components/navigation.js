@@ -4,6 +4,8 @@ import Image from "next/legacy/image"
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
+import { motion } from 'framer-motion'
+import { Menu, X, Download } from 'lucide-react'
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -86,48 +88,56 @@ export default function Navigation() {
             <Link
               href="/"
               onClick={() => setHash('')}
-              className="flex items-center space-x-6 text-slate-950 transition duration-300 hover:text-gray-600"
+              className="flex items-center"
+              aria-label="Tom Spencer — home"
             >
-              {/* <Image
-                src="/static/tomspencer.png"
-                alt="Tom Spencer - Senior UX Designer"
-                width={48}
-                height={48}
-                className="rounded-full"
-              /> */}
-              <span className="ml-4 text-lg font-bold tracking-tight">Tom Spencer</span>
+              <motion.div
+                className="relative h-12 w-12 overflow-hidden rounded-full"
+                style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.12), 0 0 0 1.5px rgba(0,0,0,0.06)' }}
+                whileHover={{ scale: 1.08, rotate: 6 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+              >
+                <Image
+                  src="/just_me.webp"
+                  alt="Tom Spencer"
+                  layout="fill"
+                  className="object-cover object-top"
+                />
+              </motion.div>
             </Link>
 
             <button
               ref={buttonRef}
-              className="text-slate-950 md:hidden"
+              className="text-slate-950 dark:text-white md:hidden"
               onClick={toggleMenu}
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             >
-              {isMenuOpen ? 'Close' : 'Menu'}
+              {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
 
-            <div className="hidden md:flex md:space-x-8">
+            <div className="hidden md:flex md:items-center md:space-x-8">
               <Link
                 href="/#work"
                 onClick={() => setHash('#work')}
-                className={`text-base ${isActive('/#work') ? 'text-violet-600' : 'text-slate-950 hover:text-violet-600'}`}
+                className={`text-base ${isActive('/#work') ? 'text-violet-600 dark:text-violet-400' : 'text-slate-950 dark:text-slate-200 hover:text-violet-600 dark:hover:text-violet-400'}`}
               >
                 Work
               </Link>
 
               <Link
                 href="/about"
-                className={`text-base ${isActive('/about') ? 'text-violet-600' : 'text-slate-950 hover:text-violet-600'}`}
+                className={`text-base ${isActive('/about') ? 'text-violet-600 dark:text-violet-400' : 'text-slate-950 dark:text-slate-200 hover:text-violet-600 dark:hover:text-violet-400'}`}
               >
                 About
               </Link>
 
               <a
                 href="/resume.pdf"
-                className="text-base text-slate-950 hover:text-violet-600"
+                className="inline-flex items-center gap-2 rounded-full bg-slate-950/[0.07] px-4 py-1.5 text-base font-medium text-slate-950 transition-colors hover:bg-violet-600 hover:text-white dark:bg-white/10 dark:text-slate-200 dark:hover:bg-violet-600 dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <Download size={14} strokeWidth={2} />
                 Resume
               </a>
             </div>
@@ -145,8 +155,9 @@ export default function Navigation() {
             <button
               onClick={() => setIsMenuOpen(false)}
               className="absolute right-6 top-12 text-white md:hidden"
+              aria-label="Close menu"
             >
-              Close
+              <X size={22} />
             </button>
 
             <div className="flex h-full flex-col items-center justify-center space-y-8">
@@ -178,7 +189,6 @@ export default function Navigation() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span className="relative z-10">Resume</span>
-                <span className="hidden absolute bottom-0 left-0 h-0.5 w-full bg-white"></span>
                 <span className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
               </a>
             </div>
