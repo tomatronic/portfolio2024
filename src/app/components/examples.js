@@ -44,8 +44,8 @@ function GalleryCard({ image }) {
         animate={{
           height:    hovered ? `${image.ratio * 100}%` : '100%',
           boxShadow: hovered
-            ? '0 20px 40px -8px rgba(0,0,0,0.18)'
-            : '0 1px 3px rgba(0,0,0,0.08)',
+            ? '0 20px 40px -8px rgba(184,64,16,0.14)'
+            : '0 1px 3px rgba(184,64,16,0.07)',
         }}
         transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
       >

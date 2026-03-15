@@ -14,20 +14,22 @@ export default function AboutMeSection() {
 
         <div className="mb-10 max-w-xl space-y-4 text-base font-normal leading-relaxed text-slate-600 dark:text-slate-400">
           <p>
-            For 8 years at Rakuten Advertising I&apos;ve been designing at the intersection of data complexity and human decision-making — dashboards, intelligent search, attribution tools.
+            For 8 years at Rakuten Advertising I&apos;ve been designing tools where the data is enormous and the decisions are real — dashboards, search, attribution.
           </p>
           <p>
             I move fast, test early, and care more about decisions landing in front of users than decks landing in front of stakeholders.
           </p>
         </div>
 
-        <Link
-          href="/about"
-          className="group inline-flex items-center gap-1.5 text-sm font-medium text-violet-600 dark:text-violet-400"
-        >
-          More about me
-          <ArrowRight size={14} strokeWidth={2.5} className="transition-transform duration-200 group-hover:translate-x-0.5" />
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link
+            href="/about"
+            className="group inline-flex items-center gap-1.5 text-sm font-medium text-accent-600 dark:text-accent-400"
+          >
+            More about me
+            <ArrowRight size={14} strokeWidth={2.5} className="transition-transform duration-200 group-hover:translate-x-0.5" />
+          </Link>
+        </div>
 
       </div>
     </section>

@@ -31,7 +31,7 @@ export default function CaseStudyModal({ children }) {
     <>
       {/* Panel */}
       <motion.div
-        className="fixed inset-0 z-50 overflow-y-auto bg-violet-600/[0.12] dark:bg-violet-950/90 backdrop-blur-sm"
+        className="fixed inset-0 z-50 overflow-y-auto bg-[#B84010]/[0.08] dark:bg-[#3D1204]/90 backdrop-blur-sm"
         initial={{ y: '100%' }}
         animate={{ y: isClosing ? '100%' : '0%' }}
         transition={isClosing

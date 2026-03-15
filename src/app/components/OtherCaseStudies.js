@@ -40,9 +40,9 @@ const CARDS = [
     href: '/casestudy/Rakuten',
     title: 'Enhancing offer management',
     images: [
-      'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=450&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=450&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=450&fit=crop&q=80',
+      '/offer_1.png',
+      '/offer_2.png',
+      '/offer_3.png',
     ],
   },
 ]
@@ -62,7 +62,7 @@ function CompactCard({ card }) {
     <Link
       href={card.href}
       replace
-      className="group relative flex w-full items-center gap-6 rounded-2xl border border-slate-200 dark:border-slate-700 px-5 py-8 transition-shadow duration-200 hover:shadow-[0_4px_24px_rgba(0,0,0,0.07)] dark:hover:shadow-[0_4px_24px_rgba(0,0,0,0.3)]"
+      className="group relative flex w-full items-center gap-6 rounded-2xl border border-[#C8BEB0] dark:border-[#2A3A4A] px-5 py-8 transition-shadow duration-200 hover:shadow-[0_4px_24px_rgba(184,64,16,0.10)] dark:hover:shadow-[0_4px_24px_rgba(238,159,104,0.12)]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

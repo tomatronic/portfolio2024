@@ -4,8 +4,8 @@ import { useTheme } from './ThemeProvider';
 import { useEffect } from 'react';
 
 const COLORS = {
-  light: '#fafafa',
-  dark:  '#0a0a0a',
+  light: '#EDE7DD',
+  dark:  '#0F1623',
 }
 
 export default function PageBackground() {

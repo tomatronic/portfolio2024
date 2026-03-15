@@ -1,10 +1,10 @@
 'use client'
 
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Download } from 'lucide-react'
 
 export default function Navigation() {
@@ -82,7 +82,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="z-50 bg-transparent">
+      <nav className="relative z-50">
         <div className="container mx-auto max-w-6xl px-6 py-12">
           <div className="flex items-center justify-between">
             <Link
@@ -104,7 +104,7 @@ export default function Navigation() {
                   <Image
                     src="/just_me.webp"
                     alt="Tom Spencer"
-                    layout="fill"
+                    fill
                     className="object-cover object-top"
                   />
                 </motion.div>
@@ -125,21 +125,21 @@ export default function Navigation() {
               <Link
                 href="/#work"
                 onClick={() => setHash('#work')}
-                className={`text-base ${isActive('/#work') ? 'text-violet-600 dark:text-violet-400' : 'text-slate-950 dark:text-slate-200 hover:text-violet-600 dark:hover:text-violet-400'}`}
+                className={`text-base ${isActive('/#work') ? 'text-accent-600 dark:text-accent-400' : 'text-slate-950 dark:text-slate-200 hover:text-accent-600 dark:hover:text-accent-400'}`}
               >
                 Work
               </Link>
 
               <Link
                 href="/about"
-                className={`text-base ${isActive('/about') ? 'text-violet-600 dark:text-violet-400' : 'text-slate-950 dark:text-slate-200 hover:text-violet-600 dark:hover:text-violet-400'}`}
+                className={`text-base ${isActive('/about') ? 'text-accent-600 dark:text-accent-400' : 'text-slate-950 dark:text-slate-200 hover:text-accent-600 dark:hover:text-accent-400'}`}
               >
                 About
               </Link>
 
               <a
                 href="/resume.pdf"
-                className="inline-flex items-center gap-2 rounded-full bg-slate-950/[0.07] px-4 py-1.5 text-base font-medium text-slate-950 transition-colors hover:bg-violet-600 hover:text-white dark:bg-white/10 dark:text-slate-200 dark:hover:bg-violet-600 dark:hover:text-white"
+                className="inline-flex items-center gap-2 rounded-full bg-slate-950/[0.07] px-4 py-1.5 text-base font-medium text-slate-950 transition-colors hover:bg-accent-600 hover:text-white dark:bg-white/10 dark:text-slate-200 dark:hover:bg-accent-600 dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -152,10 +152,15 @@ export default function Navigation() {
       </nav>
 
       {/* Full-screen Mobile menu */}
+      <AnimatePresence>
       {isMenuOpen && (
-        <div
+        <motion.div
           ref={menuRef}
           className="fixed inset-0 z-50 bg-slate-950 md:hidden"
+          initial={{ opacity: 0, y: -12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -12 }}
+          transition={{ type: 'spring', stiffness: 340, damping: 30 }}
         >
           <div className="container relative mx-auto h-full px-6 py-12">
             <button
@@ -167,40 +172,47 @@ export default function Navigation() {
             </button>
 
             <div className="flex h-full flex-col items-center justify-center space-y-8">
-              <Link
-                href="/#work"
-                className="group relative text-3xl font-bold text-white"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span className="relative z-10">Work</span>
-                <span className={`absolute bottom-0 left-0 h-1 w-full bg-white ${isActive('/#work') ? '' : 'hidden'}`}></span>
-                <span className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100 ${isActive('/#work') ? 'hidden' : ''}`}></span>
-              </Link>
+              <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.06, duration: 0.28, ease: [0.22, 1, 0.36, 1] }}>
+                <Link
+                  href="/#work"
+                  className="group relative text-3xl font-normal text-white"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className="relative z-10">Work</span>
+                  <span className={`absolute bottom-0 left-0 h-1 w-full bg-white ${isActive('/#work') ? '' : 'hidden'}`}></span>
+                  <span className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100 ${isActive('/#work') ? 'hidden' : ''}`}></span>
+                </Link>
+              </motion.div>
 
-              <Link
-                href="/about"
-                className="group relative text-3xl font-bold text-white"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span className="relative z-10">About</span>
-                <span className={`absolute bottom-0 left-0 h-1 w-full bg-white ${isActive('/about') ? '' : 'hidden'}`}></span>
-                <span className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100 ${isActive('/about') ? 'hidden' : ''}`}></span>
-              </Link>
+              <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.10, duration: 0.28, ease: [0.22, 1, 0.36, 1] }}>
+                <Link
+                  href="/about"
+                  className="group relative text-3xl font-normal text-white"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className="relative z-10">About</span>
+                  <span className={`absolute bottom-0 left-0 h-1 w-full bg-white ${isActive('/about') ? '' : 'hidden'}`}></span>
+                  <span className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100 ${isActive('/about') ? 'hidden' : ''}`}></span>
+                </Link>
+              </motion.div>
 
-              <a
-                href="/resume.pdf"
-                className="group relative text-3xl font-bold text-white"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span className="relative z-10">Resume</span>
-                <span className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
-              </a>
+              <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.14, duration: 0.28, ease: [0.22, 1, 0.36, 1] }}>
+                <a
+                  href="/resume.pdf"
+                  className="group relative text-3xl font-normal text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className="relative z-10">Resume</span>
+                  <span className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+                </a>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
     </>
   )
 }

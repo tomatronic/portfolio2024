@@ -23,8 +23,8 @@ const fraunces = Fraunces({
 
 export async function generateMetadata() {
   return {
-    title: "Tom Spencer - UX Designer",
-    description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
+    title: "Tom Spencer — UX Designer",
+    description: "Portfolio of Tom Spencer, a Senior UX Designer based in Brighton, UK — complex problems, clear interfaces.",
     icons: { icon: '/just_me.webp' },
   }
 }

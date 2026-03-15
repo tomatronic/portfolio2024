@@ -4,7 +4,7 @@ import OtherCaseStudies from "../../components/OtherCaseStudies"
 export async function generateMetadata() {
     return {
         title: "Affiliate Conversion Journey | Tom Spencer",
-        description: "Hello, I am Tom Spencer, a Senior UX Designer based in Brighton, UK. I am currently working at Rakuten Advertising.",
+        description: "Designing multi-touch attribution visualisation for Rakuten Advertising — giving publishers and advertisers a clear view of contribution across the full conversion journey.",
     }
 }
 
@@ -14,19 +14,19 @@ function ACJ() {
             <div className="relative min-h-screen">
                 <div className="container mx-auto max-w-6xl px-6">
                     <div className="rounded-4xl bg-zinc-50 p-8 md:p-12 dark:bg-slate-900">
-                    <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 dark:bg-purple-950/40 rounded-2xl mb-8">
+                    <div className="flex flex-row flex-wrap place-content-center content-center bg-[#EDE7DD] dark:bg-slate-800/50 rounded-2xl mb-8">
                             <Image src="/ACJ-hero.png" width={1600} height={927} alt="Affiliate Conversion Journey dashboard showing multi-touch attribution across awareness, consideration, and conversion phases" />
                         </div>
                         <div className="mb-12 grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-4">
                             <div className="md:col-span-2">
-                                <p className="text-sm font-semibold text-gray-600 dark:text-gray-400">Rakuten Advertising &bull; Jan 2025 - Ongoing</p>
-                                <h1><span className="text-gray-600 dark:text-gray-400 ">Affiliate Conversion Journey</span> — Multi-Touch Attribution for Affiliate</h1>
+                                <p className="text-sm font-semibold text-slate-600 dark:text-slate-400">Rakuten Advertising &bull; Oct 2022 – Jun 2023</p>
+                                <h1><span className="text-slate-600 dark:text-slate-400">Affiliate Conversion Journey</span> — Multi-Touch Attribution for Affiliate</h1>
                             </div>
                             <div className="md:col-span-2">
                                 <p>Publishers and advertisers on Rakuten's affiliate network needed to understand their contribution to sales beyond last-click attribution. When a customer discovers a product through Publisher A's blog, researches it via Publisher B's review site, then purchases after clicking Publisher C's discount link, who deserves credit?</p>
                                 <p>Without this visibility, publishers couldn't prove their value in earlier phases of the funnels, and advertisers couldn't optimize their partnerships. Competitors like CJ Affiliate and Impact offered journey tracking, putting Rakuten at a strategic disadvantage.</p>
 
-                                <div className="text-gray-600 dark:text-gray-400 space-y-1">
+                                <div className="text-slate-600 dark:text-slate-400 space-y-1">
                                     <p className="text-sm"><span className="font-normal">Role:</span> <span className="font-semibold">Sole UX designer</span></p>
                                     <p className="text-sm"><span className="font-normal">Skills:</span> <span className="font-semibold">UX/UI, User Research, Prototyping, User testing</span></p>
                                 </div>
@@ -41,7 +41,7 @@ function ACJ() {
                                     <li><b>Dual audiences</b>: Publishers needed to see "Where do I contribute?", Advertisers needed "Which publishers work together to drive conversions?". Same data, different questions and mental models.</li>
                                     <li><b>Trust</b>: Users needed confidence to make budget decisions, which meant explaining the complex attribution logic without overwhelming them.</li>
                                 </ul>
-                                <h2 className="pt-10 text-xl tracking-tight mb-12">Approach</h2>
+                                <h2 className="pt-10 text-2xl tracking-tight mb-12">Approach</h2>
                                 <p>Through interviews with both internal account managers and external users, I learned that users wanted answers to specific questions with the ability to dig deeper when needed, not open ended data exploration.</p>
 
                                 <p><b>Key insight</b>: Start with answers, allow exploration.</p>
@@ -58,22 +58,22 @@ function ACJ() {
                                     </li>
                                     <li><b>Dual-audience design</b>: Publishers see their own contribution. Advertisers see all publishers in each journey. Same data structure, different views. The core visualisation is adapted to work for both user types, without increasing engineering efforts.</li>
                                 </ul>
-                                <h2 className="pt-10 text-xl tracking-tight mb-12">Solution</h2>
+                                <h2 className="pt-10 text-2xl tracking-tight mb-12">Solution</h2>
                                 <div className="space-y-6">
-                                <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 dark:bg-purple-950/40 rounded-2xl mb-8">
+                                <div className="flex flex-row flex-wrap place-content-center content-center bg-[#EDE7DD] dark:bg-slate-800/50 rounded-2xl mb-8">
                                         <Image src="/ACJ-activity-summary.png" width={1000} height={774} alt="Users first see an activity summary with total clicks across phases, average clicks to conversion, and their baseline contribution footprint—providing context before diving into detailed journeys." />
                                     </div>
                                     <p>The Activity Summary presents raw data up front, total clicks, across phases, average clicks to conversion and baseline contributions. It allows users to quickly understand perforb before diving into complex journeys.</p>
-                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 dark:bg-purple-950/40 rounded-2xl mb-8">
+                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-[#EDE7DD] dark:bg-slate-800/50 rounded-2xl mb-8">
                                         <Image src="/ACJ-contributions.png" width={1000} height={774} alt="The Contributions tab breaks down publisher involvement across awareness, consideration, and conversion phases—giving users clear language to discuss their value beyond last-click attribution." />
                                     </div>
                                     <p>The three-phase framework transformed abstract click sequences into a clear narrative. Publishers could now say "I drive 40% of awareness conversions" instead of struggling to explain their role. Advertisers could identify which publishers were performing well at different stages of the journey.</p>
                                     <p>For deeper analyses the Touchpoints tab revealed detailed conversion paths, presenting which sequences benefitted them most.</p>
-                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 dark:bg-purple-950/40 rounded-2xl mb-8">
+                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-[#EDE7DD] dark:bg-slate-800/50 rounded-2xl mb-8">
                                         <Image src="/ACJ-filter-selected.png" width={1000} height={774} alt="Users could adjust order period and lookback window to see how attribution changed—with smart defaults (30-day lookback, month-to-date) and inline helper text preventing confusion." />
                                     </div>
                                     <p>The default filters prevented cognitive overload while still giving users control. As users updated filter choices the report updates seamlessly.</p>
-                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-purple-100 dark:bg-purple-950/40 rounded-2xl mb-8">
+                                    <div className="flex flex-row flex-wrap place-content-center content-center bg-[#EDE7DD] dark:bg-slate-800/50 rounded-2xl mb-8">
                             <Image src="/ACJ-comparison.png" width={1600} height={927} alt="Side-by-side comparison of publisher and advertiser views of the same attribution data, demonstrating the dual-audience design" />
                         </div>
                                     <p><b>Dual-audience view</b>: Rather than building two separate tools, one core visualization adapted based on user type. Publishers filtered by their own SIDs and saw "you" language. Advertisers filtered by campaign or publisher group and saw top contributors. Same data structure, different views, serving both audiences without doubling engineering effort.</p>
@@ -104,12 +104,12 @@ function ACJ() {
                                                 <li>More informed budget allocation decisions across awareness, consideration, and conversion</li>
                                             </ul>
                                         </div>
-                                        <p>Users engaged more with high-level summaries detailed paths. They wanted answers to specific questionsor not open-ended data exploration. This reinforced thateffective data visualisation guides users toward specific insights rather than overwhelming them with raw information.</p>
+                                        <p>Users engaged more with the high-level summaries than the detailed paths. They wanted answers to specific questions, not open-ended data exploration. The more I added context around the numbers, the more confident they were making decisions from them.</p>
                                     </div>
                                 </div>
-                                <h2 className="pt-10 text-xl tracking-tight mb-12">What I learned</h2>
-                                <p>Complex data visualization isn't about showing everything, it's about progressive disclosure. The dual-audience challenge taught me that the same data can serve different needs with thoughtful filtering and presentation.</p>
-                                <p>This project reinforced that trust comes from transparency, not simplification. Users were willing to engage with complexity when the logic was clearly explained, building confidence in the data and insights being shown.</p>
+                                <h2 className="pt-10 text-2xl tracking-tight mb-12">What I learned</h2>
+                                <p>The dual-audience constraint pushed me somewhere I wouldn't have gone otherwise. Rather than building two separate tools, sharing a data structure with different views turned out to be a cleaner solution than I expected. The same data really can tell different stories depending on what question you're starting with.</p>
+                                <p>Users engaged more readily with the attribution data once the logic was explained upfront — not simplified away. They didn't need less information, they needed better framing. That's something I've kept in mind since.</p>
                                 <OtherCaseStudies currentHref="/casestudy/ACJ" />
                             </div>
                         </div>
