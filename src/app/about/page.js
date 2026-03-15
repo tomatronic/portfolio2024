@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 // Add your images to the public folder, then list them here (e.g. public/hobbies/travelling-1.jpg → "/hobbies/travelling-1.jpg")
 const travellingImages = [
@@ -139,12 +140,12 @@ export default function About() {
                     <div className="border-t border-[#C8BEB0] dark:border-[#2A3A4A] pt-12 pb-4">
                         <p className="text-base text-slate-600 dark:text-slate-400">
                             Want to see how this thinking plays out in practice?{' '}
-                            <a
+                            <Link
                                 href="/#work"
                                 className="font-medium text-accent-600 dark:text-accent-400 underline underline-offset-2 decoration-accent-300 hover:decoration-accent-500 transition-colors"
                             >
                                 See my work →
-                            </a>
+                            </Link>
                         </p>
                     </div>
 
