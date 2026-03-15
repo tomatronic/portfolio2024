@@ -6,6 +6,7 @@ import ThemeProvider from './components/ThemeProvider';
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { DM_Sans, Fraunces } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -56,6 +57,7 @@ export default function RootLayout({ children, modal }) {
         </ThemeProvider>
         <GoogleAnalytics gaId="G-CCDKVM70NV" debug={true} />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
